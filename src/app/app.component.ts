@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   constructor(private router: Router) {}
+  title = 'DevDenise';
   linkedinProfile = 'https://www.linkedin.com/in/denise-nanni/';
   gitHubProfile = 'https://github.com/DeniseN90';
   customAction: 'RESUME';
