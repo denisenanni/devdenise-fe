@@ -29,7 +29,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     NbStepperModule,
     NbCardModule,
     NbButtonModule,
-    NbInputModule
+    NbInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
