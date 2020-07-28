@@ -5,14 +5,14 @@ import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
-  { path: '',   redirectTo: '/', pathMatch: 'full' },
-  { path: '**', component: AppComponent },
   { path: '', 
     component: AppComponent,
     children: [
       { path: 'resume', component: ResumeComponent },
     ]
-},
+  },
+  { path: '',   redirectTo: '/', pathMatch: 'full' },
+  { path: '**', component: AppComponent },
 ];
 
 @NgModule({

@@ -1,20 +1,18 @@
 <nb-layout>
   <nb-layout-header fixed>
     <nb-actions>
-      <nb-action >
+      <nb-action title="GitHub Profile">
         <a target="_blank" href={{gitHubProfile}}><nb-icon icon="github-outline"></nb-icon></a>
       </nb-action>
-      <nb-action>
+      <nb-action title="Linkedin Profile">
         <a target="_blank" href="{{linkedinProfile}}"><nb-icon icon="linkedin"></nb-icon></a>
       </nb-action>
       <nb-action [routerLink]="['/resume']">
         RESUME
       </nb-action>
-
     </nb-actions>
   </nb-layout-header>
-
   <nb-layout-column>
-    <button nbButton>Hello World</button>
+    <router-outlet></router-outlet>
   </nb-layout-column>
 </nb-layout>
