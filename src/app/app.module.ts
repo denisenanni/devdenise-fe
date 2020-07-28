@@ -9,12 +9,14 @@ import { NbThemeModule, NbLayoutModule, NbActionsModule, NbSidebarModule, NbIcon
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ResumeComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
