@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule, NbActionsModule, NbSidebarModule, NbIconModule, NbStepperModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbActionsModule, NbSidebarModule, NbIconModule, 
+  NbStepperModule, NbCardModule, NbButtonModule, NbInputModule  } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
@@ -25,7 +26,10 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     NbActionsModule,
     NbSidebarModule,
     NbIconModule,
-    NbStepperModule
+    NbStepperModule,
+    NbCardModule,
+    NbButtonModule,
+    NbInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

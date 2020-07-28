@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ResumeComponent } from './resume/resume.component';
 import { AppComponent } from './app.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 
 const routes: Routes = [
@@ -9,6 +10,7 @@ const routes: Routes = [
     component: AppComponent,
     children: [
       { path: 'resume', component: ResumeComponent },
+      { path: 'contact-form', component: ContactFormComponent },
     ]
   },
   { path: '',   redirectTo: '/', pathMatch: 'full' },
