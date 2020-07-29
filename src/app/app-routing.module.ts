@@ -4,16 +4,18 @@ import { ResumeComponent } from './resume/resume.component';
 import { AppComponent } from './app.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HomeComponent } from './home/home.component';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
 
 
 const routes: Routes = [
-  { path: '',   redirectTo: '/home', pathMatch: 'full' },
+  { path: '',   redirectTo: '/under-construction', pathMatch: 'full' },
   { path: '', 
     component: AppComponent,
     children: [
       { path: 'home', component: HomeComponent },
       { path: 'resume', component: ResumeComponent },
       { path: 'contact-form', component: ContactFormComponent },
+      { path: 'under-construction', component: UnderConstructionComponent },
     ]
   },
   { path: '**', component: AppComponent },

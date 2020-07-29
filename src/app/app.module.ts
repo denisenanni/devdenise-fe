@@ -5,18 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule, NbActionsModule, NbSidebarModule, NbIconModule, 
-  NbStepperModule, NbCardModule, NbButtonModule, NbInputModule  } from '@nebular/theme';
+  NbStepperModule, NbCardModule, NbButtonModule, NbInputModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HomeComponent } from './home/home.component';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ResumeComponent,
     ContactFormComponent,
-    HomeComponent
+    HomeComponent,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,7 @@ import { HomeComponent } from './home/home.component';
     NbStepperModule,
     NbCardModule,
     NbButtonModule,
-    NbInputModule,
+    NbInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
