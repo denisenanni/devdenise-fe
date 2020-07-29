@@ -11,6 +11,9 @@ import { ResumeComponent } from './resume/resume.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HomeComponent } from './home/home.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
+import { ArticleCardComponent } from './article-card/article-card.component';
+import { ArticleComponent } from './article/article.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     ResumeComponent,
     ContactFormComponent,
     HomeComponent,
-    UnderConstructionComponent
+    UnderConstructionComponent,
+    ArticleCardComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +38,8 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     NbStepperModule,
     NbCardModule,
     NbButtonModule,
-    NbInputModule
+    NbInputModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
