@@ -1,6 +1,6 @@
 <nb-layout>
-  <nb-layout-header fixed>
-    <nb-actions>
+  <nb-layout-header fixed class="custom-header">
+    <nb-actions class="w-50">
       <nb-action title="Home" [routerLink]="['/home']">
         <nb-icon icon="home"></nb-icon>
       </nb-action>
@@ -11,7 +11,8 @@
         <nb-icon icon="email"></nb-icon>
       </nb-action>
     </nb-actions>
-    <nb-actions>
+
+    <nb-actions class="w-50 d-flex justify-content-end">
       <nb-action title="GitHub Profile">
         <a target="_blank" href="{{ gitHubProfile }}"
           ><nb-icon icon="github-outline"></nb-icon
@@ -23,6 +24,7 @@
         ></a>
       </nb-action>
     </nb-actions>
+
   </nb-layout-header>
   <nb-layout-column>
     <router-outlet></router-outlet>
