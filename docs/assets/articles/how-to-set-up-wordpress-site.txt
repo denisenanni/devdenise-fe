@@ -1,0 +1,208 @@
+How to set up a WordPress site on an EC2 AWS instance with an SSL certificate
+
+Step 1 – Get a domain name
+
+Access to you AWS management console.
+
+Select the service Route53.
+
+Type in your domain and click ‘Check’.
+
+Once you found the right available domain proceed adding to chart.
+
+Select the wanted option (at this point I opt for the version without www, which can be added later as amn alias).
+
+The domain registration at this point will be in process.
+
+Once processed the request, you’ll be able to see your domain clicking on the option ‘Registered domains’ on the left-hand menu.
+
+We’ll come back here later to create the record sets.
+
+Step 2 – Create the EC2 instance
+Select EC2 among the services in the console.
+
+Select ‘Instances’ in the left-hand menu and ‘Launch Instance’ in the top-right corner of the window.
+
+Select Amazon MarketPlace from the options on the left and search for WordPress Certified by Bitnami and Automattic, once selected it will show you the pricing.
+
+It is possible to select an instance type free-tier eligible.
+
+At this point click ‘Review and Launch’.
+
+It will prompt you for defining a key value pair, which we will need to SSH into our instance.
+
+You can pick up one already existing (make sure you downloaded it when you created it) or you can create and download a new one. After you downloaded the .pem file proceed clicking launch instance.
+
+Selecting the instance you can see now the public DNS of it, we will need it to SSH into it.
+
+Step 3 – Request an SSL certificate from AWS
+Select ‘Certificate Manager’ in the AWS console.
+
+Click ‘Request a certificate’.
+
+Go on with the default options.
+
+Add the domain name(s) for which your are requesting it. At this point you’ll probably want to add the 2 version of your domain (with and without ‘www’).
+
+Select ‘Next’ and choose the type of validation. I’ll go with the email validation, because it’s quicker, but in case you are not the admin of the account you’ll have to go with the DNS validation.
+
+Click ‘Review’ and confirm the request.
+
+Select ‘Continue’.
+
+If you chose to validate through email you’ll receive an email for every domain you picked, click on the link in the email and click ‘I approve’.
+
+Step 4 – Create a load balancer and target group with associated certificate
+After the certificate is approved we can proceed creating the load balancer .
+
+Log into the EC2 dashboard.
+
+Select Load Balancer from the left-hand menu.
+
+Click ‘Create load balancer’ and select ‘Application load balancer’.
+
+Write a name for it.
+
+Add a listener with protocol HTTPS.
+
+Select at least 2 availability zones.
+
+Proceed clicking ‘Configure security settings’.
+
+Select your certificate from the dropdown list and leave the default options for the rest.
+
+Click ‘Configure Security Groups’.
+
+Select the option ‘Create a new security group’.
+
+You’ll need to add 2 rules with the following option selected:
+
+Type : HTTP
+
+Source: Anywhere
+
+Type : HTTPS
+
+Source: Anywhere
+
+Click ‘Configure routing’.
+
+Give a name to the target group and click ‘Register target’.
+
+In the next window, select your instance at the bottom and click ‘Add to registered’.
+
+Click ‘Review’ and then ‘Create’.
+
+UPDATE: In order to redirect http to https, once your load balancer is active select it in the panel and select the tab ‘Listeners’.
+
+Select “View/edit rules”.
+
+Click ‘Edit rules’, eliminate the default action and add the action ‘Redirect to..’, select ‘HTTPS’ on port 443 and update the rule.
+
+Step 5 –  Create the alias records
+Let’s go back to Route 53.
+
+Select your hosted zone and click ‘Add record set’.
+
+One record will be without ‘www’, type A-iPv4. Check the option alias and select your load balancer from the dropdown list.
+
+Repeat the same procedure for the domain with ‘www’.
+
+Step 6 – SSH into the instance
+At this point you instance is up and running with the domain name you chose. 
+
+However to make the certificate effective we’ll need to modify the config file of our instance.
+
+To do so we will need the .pem file downloaded before.
+
+The following procedure works on linux and mac.
+
+Open a terminal.
+
+Type this to change the file permissions of the .pem file
+
+chmod 600 /path-to-your-key.pem
+
+Then type this to ssh into the instance, using the DNS address you saw on the EC2 panel:
+
+ssh bitnami@ec2-17-08-02-19.compute-1.amazonaws.com -i /path-to-your-key.pem
+
+Type in ‘yes’ if it asks you if you are sure you want to connect.
+
+Now we can see our application credentials.
+
+Type in cat ./bitnami_credentials. You will see something like:
+
+The default username and password is 'user' and 'YUrahstyU'.
+
+These are the credentials to access your wordpress dahsboard.
+
+Type in :
+
+vim /opt/bitnami/apps/wordpress/htdocs/wp-config.php
+
+Look for these lines:
+
+define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/');
+
+define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] . '/');
+
+Modify them in this way:
+
+define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST'] . '/');
+
+define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST'] . '/');
+
+Before these 2 lines add this:
+
+if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
+
+$_SERVER['HTTPS']='on';
+
+Save and close.
+
+Then let’s modify the server configurations. Type in:
+
+vim /opt/bitnami/apps/wordpress/conf/httpd-prefix.conf.
+
+Add this line at the top:
+
+SetEnvIf x-forwarded-proto https HTTPS=on
+
+Save and close
+
+Restart the server.
+
+sudo /opt/bitnami/ctlscript.sh restart apache
+
+At this point the certificate will be effective, but you’ll need to wait to see the changes and if necessary clean the cache of your browser.
+
+Update:
+In some cases there might be the need to manually change the ‘siteurl’ and ‘home’ values of our domain to the https version.
+
+In order to do so, connect via SSH to your instance. Before connecting to the database you can get your default password in the wp-config.php file.
+
+Type to access to your database:
+
+sudo mysql -u bn_wordpress -p -e "USE bitnami_wordpress; select option_name,option_value from wp_options WHERE option_name='siteurl' OR option_name='home';"
+
+It will ask you for the password and it will show you your domain URL:
+
+If the url is not https you can change it this way:
+
+sudo mysql -u bn_wordpress -p -e "USE bitnami_wordpress; UPDATE wp_options SET option_value = 'https://127.0.0.1/wordpress/' WHERE option_name = 'home' OR option_name = 'siteurl';"
+
+Resources:
+https://docs.bitnami.com/aws/faq/get-started/find-credentials/#option-2-find-password-by-connecting-to-your-application-through-ssh
+
+https://stackoverflow.com/questions/24603620/redirecting-ec2-elastic-load-balancer-from-http-to-https
+
+https://stackoverflow.com/questions/46084104/ssl-cloudfront-ec2-wordpress-through-bitnami
+
+http://coenraets.org/blog/2012/01/setting-up-wordpress-on-amazon-ec2-in-5-minutes/
+
+https://community.bitnami.com/t/http-to-https-redirect-is-not-working/69595/9
+
+https://stackoverflow.com/questions/26620670/apache-httpx-forwarded-proto-in-htaccess-is-causing-redirect-loop-in-dev-envir
+
+Tags
