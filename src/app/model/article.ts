@@ -1,9 +1,9 @@
 export class ArticleCard {
-  private title: string;
-  private text: string;
-  private blob: ImageBitmap;
+  title: string;
+  text: string;
+  blob: ImageBitmap;
 }
 
 export class Article extends ArticleCard {
-    private resources: Array<string>;
+    resources: Array<string>;
 }

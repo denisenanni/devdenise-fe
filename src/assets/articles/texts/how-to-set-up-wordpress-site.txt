@@ -1,4 +1,12 @@
-How to set up a WordPress site on an EC2 AWS instance with an SSL certificate
+articleCards [
+    {
+        "title": "How to set up a WordPress site on an EC2 AWS instance with an SSL certificate",
+        "text": "
+    }
+]
+    
+    
+    
 
 Step 1 – Get a domain name
 
@@ -10,7 +18,7 @@ Type in your domain and click ‘Check’.
 
 Once you found the right available domain proceed adding to chart.
 
-Select the wanted option (at this point I opt for the version without www, which can be added later as amn alias).
+Select the wanted option (at this point I opt for the version without www, which can be added later as an alias).
 
 The domain registration at this point will be in process.
 
