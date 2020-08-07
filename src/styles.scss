@@ -7,4 +7,32 @@
 };
 /* You can add global styles to this file, and also import other style files */
 
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+  font-family: Halva;
+  src: url(assets/fonts/halva-font/Halva-qZY3r.otf) format("opentype");
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Halva;
+}
+
+div.background {
+  background-image: url("assets/bg.jpg") !important;
+  height: 100vh;
+  width: 100%;
+  background-size: 100% 100%;
+  background-position: top center;
+}
+
+
+nb-layout {
+  visibility: hidden;
+}
+
+
