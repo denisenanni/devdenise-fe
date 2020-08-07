@@ -1,32 +1,4 @@
-<nb-layout>
-  <nb-layout-header fixed class="custom-header">
-    <nb-actions class="w-50">
-      <nb-action title="Home" [routerLink]="['/home']">
-        <nb-icon icon="home"></nb-icon>
-      </nb-action>
-      <nb-action title="Resume" [routerLink]="['/resume']">
-        RESUME
-      </nb-action>
-      <nb-action title="Contact me" [routerLink]="['/contact-form']">
-        <nb-icon icon="email"></nb-icon>
-      </nb-action>
-    </nb-actions>
 
-    <nb-actions class="w-50 d-flex justify-content-end">
-      <nb-action title="GitHub Profile">
-        <a target="_blank" href="{{ gitHubProfile }}"
-          ><nb-icon icon="github-outline"></nb-icon
-        ></a>
-      </nb-action>
-      <nb-action title="Linkedin Profile">
-        <a target="_blank" href="{{ linkedinProfile }}"
-          ><nb-icon icon="linkedin"></nb-icon
-        ></a>
-      </nb-action>
-    </nb-actions>
 
-  </nb-layout-header>
-  <nb-layout-column>
-    <router-outlet></router-outlet>
-  </nb-layout-column>
-</nb-layout>
+<router-outlet></router-outlet>
+
