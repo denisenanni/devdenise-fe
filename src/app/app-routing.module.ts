@@ -9,8 +9,12 @@ import { ProjectsAndSkillsComponent } from './projects-and-skills/projects-and-s
 const routes: Routes = [
   // { path: '',   redirectTo: '/under-construction', pathMatch: 'full' },
   { path: '', component: HomeComponent },
-  { path: 'blog', component: BlogComponent },
-  { path: 'projects', component: ProjectsAndSkillsComponent },
+  { path: 'blog', component: BlogComponent, data: { animation: 'Blog' } },
+  {
+    path: 'projects',
+    component: ProjectsAndSkillsComponent,
+    data: { animation: 'ProjectsAndSkills' },
+  },
   { path: 'under-construction', component: UnderConstructionComponent },
   { path: '**', component: HomeComponent },
 ];
