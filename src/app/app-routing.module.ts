@@ -8,17 +8,15 @@ import { UnderConstructionComponent } from './under-construction/under-construct
 
 
 const routes: Routes = [
-  { path: '',   redirectTo: '/under-construction', pathMatch: 'full' },
-  { path: '', 
-    component: AppComponent,
-    children: [
-      { path: 'home', component: HomeComponent },
-      { path: 'resume', component: ResumeComponent },
-      { path: 'contact-form', component: ContactFormComponent },
-      { path: 'under-construction', component: UnderConstructionComponent },
-    ]
-  },
-  { path: '**', component: AppComponent },
+ // { path: '',   redirectTo: '/under-construction', pathMatch: 'full' },
+  { path: '', component: HomeComponent},
+  { path: 'resume', component: ResumeComponent },
+  { path: 'contact-form', component: ContactFormComponent },
+  { path: 'under-construction', component: UnderConstructionComponent },
+  { path: '**', component: HomeComponent },
+    
+  
+  
 ];
 
 @NgModule({
