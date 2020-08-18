@@ -1,0 +1,33 @@
+ul.menu {
+    box-sizing: border-box;
+    width: fit-content;
+    max-width: 100%;
+    list-style-type: none;
+    margin: 5vh auto;
+    padding: 0;
+    display: block;
+    border-top: .5px solid #fff;   
+}
+
+ul.menu > li {
+    display: inline-block;
+    margin: 0 1vw;
+    padding: 0;
+    transition: padding .5s;
+    transition-timing-function: ease-out;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+ul.menu > li:hover {
+    background-color: rgba(7, 10, 26, .6);
+    padding: 1vw;
+  }
+
+
+  
