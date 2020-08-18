@@ -13,6 +13,9 @@ import { CommonModule, LocationStrategy, PathLocationStrategy } from '@angular/c
 import { MenuComponent } from './menu/menu.component';
 import { BlogComponent } from './blog/blog.component';
 import { GobackDirective } from './directives/goback.directive';
+import { ProjectsAndSkillsComponent } from './projects-and-skills/projects-and-skills.component';
+import { AppService } from './app.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { GobackDirective } from './directives/goback.directive';
     ArticleComponent,
     MenuComponent,
     BlogComponent,
-    GobackDirective
+    GobackDirective,
+    ProjectsAndSkillsComponent
   ],
   imports: [
     BrowserModule,
@@ -36,9 +40,10 @@ import { GobackDirective } from './directives/goback.directive';
     NbCardModule,
     NbButtonModule,
     NbInputModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
