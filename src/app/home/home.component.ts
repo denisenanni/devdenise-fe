@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
 
   linkedinProfile = 'https://www.linkedin.com/in/denise-nanni/';
   gitHubProfile = 'https://github.com/DeniseN90';
+  soundCloudProfile = 'https://soundcloud.com/denise-nanni';
 
 
   constructor() {

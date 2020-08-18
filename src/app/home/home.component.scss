@@ -3,14 +3,32 @@ div.img-container {
 }
 
 img.img-fluid {
-    max-width: 80%;
+    max-width: 22vw;
 }
 div.col.home-heading {
-    margin-top: 10rem;
-
+    margin-top: 7vh;
 }
 
 h1.home-heading {
-    font-size: 8rem;
-    color: #fff;
+    font-size: 6vw;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    max-width: 80vh;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 4vh;
+
+}
+
+img {
+    // box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+
+div.social-links {
+    display: inline;
+
+}
+
+div.social-links > a {
+
+    
 }
