@@ -1,10 +1,10 @@
-@import 'themes';
+@import "themes";
 
-@import '~@nebular/theme/styles/globals';
+@import "~@nebular/theme/styles/globals";
 
 @include nb-install() {
   @include nb-theme-global();
-};
+}
 /* You can add global styles to this file, and also import other style files */
 
 @import "~bootstrap/dist/css/bootstrap.css";
@@ -13,7 +13,6 @@
   font-family: Halva;
   src: url(assets/fonts/halva-font/Halva-qZY3r.otf) format("opentype");
 }
-
 
 * {
   box-sizing: border-box;
@@ -35,6 +34,3 @@ div.background {
   background-size: 100% 100%;
   background-position: top center;
 }
-
-
-

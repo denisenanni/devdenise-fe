@@ -33,4 +33,18 @@ ul.menu > li:hover {
   li a {
     font-size: initial;
   }
+
+  ul.menu {
+    border-top: none;
+  }
+
+  ul.menu > li {
+    display: block;
+    padding: 0.2rem;
+  }
+
+  li a:active {
+    background-color: rgba(7, 10, 26, 0.6);
+    padding: 1vw;
+  }
 }
