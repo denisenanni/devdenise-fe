@@ -24,6 +24,7 @@ import { ProjectsAndSkillsComponent } from './projects-and-skills/projects-and-s
 import { AppService } from './app.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { FooterComponent } from './footer/footer.component';
     GobackDirective,
     ProjectsAndSkillsComponent,
     FooterComponent,
+    ProjectCardComponent,
   ],
   imports: [
     BrowserModule,
