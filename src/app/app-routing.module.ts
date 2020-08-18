@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ResumeComponent } from './resume/resume.component';
 import { AppComponent } from './app.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HomeComponent } from './home/home.component';
@@ -10,7 +9,6 @@ import { UnderConstructionComponent } from './under-construction/under-construct
 const routes: Routes = [
  // { path: '',   redirectTo: '/under-construction', pathMatch: 'full' },
   { path: '', component: HomeComponent},
-  { path: 'resume', component: ResumeComponent },
   { path: 'contact-form', component: ContactFormComponent },
   { path: 'under-construction', component: UnderConstructionComponent },
   { path: '**', component: HomeComponent },
