@@ -3,7 +3,7 @@ import { ArticleCard, Article } from '../model/article';
 
 
 @Component({
-  selector: 'app-home',
+  selector: 'home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
