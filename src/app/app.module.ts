@@ -13,6 +13,7 @@ import { ArticleCardComponent } from './article-card/article-card.component';
 import { ArticleComponent } from './article/article.component';
 import { CommonModule } from '@angular/common';
 import { MenuComponent } from './menu/menu.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MenuComponent } from './menu/menu.component';
     UnderConstructionComponent,
     ArticleCardComponent,
     ArticleComponent,
-    MenuComponent
+    MenuComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

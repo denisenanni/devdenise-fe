@@ -4,11 +4,13 @@ import { AppComponent } from './app.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { HomeComponent } from './home/home.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 const routes: Routes = [
  // { path: '',   redirectTo: '/under-construction', pathMatch: 'full' },
   { path: '', component: HomeComponent},
+  { path: 'blog', component: BlogComponent },
   { path: 'contact-form', component: ContactFormComponent },
   { path: 'under-construction', component: UnderConstructionComponent },
   { path: '**', component: HomeComponent },
