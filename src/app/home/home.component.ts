@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ArticleCard, Article } from '../model/article';
+import { Article } from '../model/article';
 
 
 @Component({
