@@ -1,8 +1,28 @@
-div.card.w-100 {
-    width: 80vw;
-    background-color: rgba(255, 255, 255, 0.225);
+div.card {
+  background: transparent;
+  height: 28vh;
+  width: auto;
+  background-size: cover;
+  border: transparent;
 }
 
 a.card-link {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+div.layer {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: inherit;
+  padding: 1rem;
+
+}
+
+
+div.footer {
+    position: absolute;
+    bottom: 2rem;
+}
+
+p.card-text {
+    font-size: 1.3rem;
 }

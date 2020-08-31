@@ -1,12 +1,3 @@
-@import "themes";
-
-@import "~@nebular/theme/styles/globals";
-
-@include nb-install() {
-  @include nb-theme-global();
-}
-/* You can add global styles to this file, and also import other style files */
-
 @import "~bootstrap/dist/css/bootstrap.css";
 
 @font-face {
@@ -18,19 +9,84 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+a {
   font-family: Halva;
+}
+
+h3 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
 }
 
 body {
   color: #fff;
+  
 }
 
 div.background {
   background-image: url("assets/bg.jpg") !important;
-  height: 100vh;
-  max-height: 100vh;
   width: 100vw;
-  max-width: 100vw;
+  min-height: 100vh;
   background-size: 100% 100%;
   background-position: top center;
+}
+
+button {
+  padding: 0.5vh;
+  margin: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+code,
+a {
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+img.article-img {
+  max-width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  p.card-text {
+    font-size: 1rem !important;
+  }
+
+  h5.card-title {
+    margin: 0;
+  }
+
+  div.card-body {
+    padding: 0;
+  }
 }

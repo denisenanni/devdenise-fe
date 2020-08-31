@@ -7,7 +7,7 @@ img.img-fluid {
   border: 2px solid;
 }
 div.col.home-heading {
-  margin-top: 7vh;
+  margin-top: 13vh;
 }
 
 h1.home-heading {
@@ -21,14 +21,19 @@ h1.home-heading {
 }
 
 img {
-  // box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  transition: height 0.9s;
+  transition-timing-function: ease-out;
 }
 
 div.social-links {
   display: inline;
+  
 }
 
-div.social-links > a {
+img.icons:hover{
+  height: 40px;
+  width: 40px;
+
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
