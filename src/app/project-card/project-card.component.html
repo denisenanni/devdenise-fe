@@ -1,13 +1,25 @@
-<div class="card w-100">
+<div
+  class="card m-4"
+  [ngStyle]="{ 'background-image': 'url(' + project.imageLink + ')' }"
+>
+  <div class="layer text-center">
     <div class="card-header">
-      <h5 class="card-title">
-   
+      <h5 class="card-title font-weight-bold">
+        {{ project.title }}
       </h5>
     </div>
     <div class="card-body">
-      <p class="card-text text-muted">
-  
-      </p>
-      <a class="card-link">Go to project</a>
+      <p class="card-text">{{ project.description }}</p>
     </div>
+    <div *ngIf="mobile; else desktop">
+      <a (click)="goToProject()">Go to project</a>
+    </div>
+    <ng-template #desktop>
+      <div class="footer w-100">
+        <button class="btn btn-outline-light btn-lg" (click)="goToProject()">
+          Go to project
+        </button>
+      </div>
+    </ng-template>
   </div>
+</div>
