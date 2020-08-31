@@ -1,3 +1,1 @@
-export const SERVER_API_URL = 'trtrt';
-
-//process.env.SERVER_API_URL;
+export const SERVER_API_URL = 'https://devdenise-be.herokuapp.com/';
