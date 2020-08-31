@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
+import { ArticleCard } from '../model/article';
 
 @Component({
   selector: 'blog',
@@ -7,11 +8,17 @@ import { AppService } from '../app.service';
   styleUrls: ['./blog.component.scss'],
 })
 export class BlogComponent implements OnInit {
+  articlesCards: ArticleCard[];
+
   constructor(protected appService: AppService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getArticlesCards();
+  }
 
   getArticlesCards() {
-    // this.appService.getArticlesCards().subscribe();
+    this.appService.getArticlesCards().subscribe(resp => {
+      this.articlesCards = resp;
+    });
   }
 }
