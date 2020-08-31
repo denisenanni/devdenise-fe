@@ -1,13 +1,19 @@
-<div class="card w-100">
+<div class="card w-100 text-center">
   <div class="card-header">
     <h5 class="card-title">
-     {{ title }}
+      {{ articleCard.title }}
     </h5>
   </div>
   <div class="card-body">
-    <p class="card-text text-muted">
-     {{ text }}
+    <p class="card-text">
+      {{ articleCard.outline }}
     </p>
-    <a (click)="goToArticle()" class="card-link">Read more</a>
+    <button
+      class="btn btn-outline-light"
+      (click)="goToArticle()"
+      class="card-link"
+    >
+      Read more
+    </button>
   </div>
 </div>

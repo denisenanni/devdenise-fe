@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { AppService } from '../app.service';
+import { ArticleCard } from '../model/article';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'article-card',
@@ -8,25 +10,20 @@ import { AppService } from '../app.service';
 })
 export class ArticleCardComponent implements OnInit, OnChanges {
 
-  @Input() title: string;
-  @Input() text: string;
-  @Input() articleId: number;
+  @Input() articleCard: ArticleCard;
 
 
-  constructor(protected appService: AppService) {}
+  constructor(
+    protected appService: AppService,
+    protected router: Router) {}
 
   ngOnInit(): void {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    console.log(this.title);
-    console.log(this.text);
-    console.log(this.articleId);
-
-
   }
 
   goToArticle() {
-    //this.appService.getArticleDetail().subscribe();
+    this.router.navigate(['/article', this.articleCard.id]);
   }
 }
