@@ -1,1 +1,1 @@
-export const SERVER_API_URL = 'https://devdenise-be.herokuapp.com/';
+export const SERVER_API_URL = 'https://devdenise-be.herokuapp.com';
