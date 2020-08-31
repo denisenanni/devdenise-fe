@@ -5,11 +5,17 @@ import { HomeComponent } from './home/home.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
 import { BlogComponent } from './blog/blog.component';
 import { ProjectsAndSkillsComponent } from './projects-and-skills/projects-and-skills.component';
+import { ArticleComponent } from './article/article.component';
 
 const routes: Routes = [
   // { path: '',   redirectTo: '/under-construction', pathMatch: 'full' },
   { path: '', component: HomeComponent },
-  { path: 'blog', component: BlogComponent, data: { animation: 'Blog' } },
+  { path: 'blog', component: BlogComponent, data: { animation: 'Blog' } }, 
+  {
+    path: 'article/:id',
+    component: ArticleComponent,
+    data: { animation: 'Article' },
+  },
   {
     path: 'projects',
     component: ProjectsAndSkillsComponent,
