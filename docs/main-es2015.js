@@ -301,15 +301,15 @@ class AppService {
             navigator.userAgent.indexOf('IEMobile') !== -1);
     }
     getArticlesCards() {
-        return this.http.get(this.resourceUrl + '/get-articles-cards');
+        return this.http.get(this.resourceUrl + 'get-articles-cards');
     }
     getArticleById(id) {
-        return this.http.get(this.resourceUrl + '/get-article/' + id, {
+        return this.http.get(this.resourceUrl + 'get-article/' + id, {
             observe: 'response',
         });
     }
     getProjects() {
-        return this.http.get(this.resourceUrl + '/get-projects', {
+        return this.http.get(this.resourceUrl + 'get-projects', {
             observe: 'response',
         });
     }

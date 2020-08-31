@@ -530,19 +530,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getArticlesCards",
         value: function getArticlesCards() {
-          return this.http.get(this.resourceUrl + '/get-articles-cards');
+          return this.http.get(this.resourceUrl + 'get-articles-cards');
         }
       }, {
         key: "getArticleById",
         value: function getArticleById(id) {
-          return this.http.get(this.resourceUrl + '/get-article/' + id, {
+          return this.http.get(this.resourceUrl + 'get-article/' + id, {
             observe: 'response'
           });
         }
       }, {
         key: "getProjects",
         value: function getProjects() {
-          return this.http.get(this.resourceUrl + '/get-projects', {
+          return this.http.get(this.resourceUrl + 'get-projects', {
             observe: 'response'
           });
         }
