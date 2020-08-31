@@ -1,5 +1,8 @@
-export class ProjectCard {
+export class Project {
+    id: number;
     title: string;
     link: string;
-    image: ImageBitmap;
+    imageLink: string;
+    description: string;
+    
 }

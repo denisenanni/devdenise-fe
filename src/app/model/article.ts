@@ -1,10 +1,22 @@
-export class ArticleCard {
+export class Article {
+  id: number;
   title: string;
-  preview: string;
-  image: ImageBitmap;
+  outline: string;
+  sections: ArticleSection;
+  resources: any;
+  images: any;
 }
 
-export class Article extends ArticleCard {
-    text: HTMLElement;
-    resources: Array<string>;
+export class ArticleCard {
+  id: number;
+  title: string;
+  outline: string;
+}
+
+
+export class ArticleSection {
+  id: number;
+  section: string;
+  imageLink: string;
+
 }
