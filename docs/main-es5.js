@@ -287,7 +287,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       return SERVER_API_URL;
     });
 
-    var SERVER_API_URL = 'https://devdenise-be.herokuapp.com/';
+    var SERVER_API_URL = 'https://devdenise-be.herokuapp.com';
     /***/
   },
 

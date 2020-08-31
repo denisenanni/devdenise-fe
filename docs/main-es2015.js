@@ -141,7 +141,7 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SERVER_API_URL", function() { return SERVER_API_URL; });
-const SERVER_API_URL = 'https://devdenise-be.herokuapp.com/';
+const SERVER_API_URL = 'https://devdenise-be.herokuapp.com';
 
 
 /***/ }),
