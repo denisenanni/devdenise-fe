@@ -25,17 +25,17 @@ export class AppService {
   }
 
   getArticlesCards(): Observable<any> {
-    return this.http.get(this.resourceUrl + '/get-articles-cards');
+    return this.http.get(this.resourceUrl + 'get-articles-cards');
   }
 
   getArticleById(id: number): Observable<any> {
-    return this.http.get(this.resourceUrl + '/get-article/' + id, {
+    return this.http.get(this.resourceUrl + 'get-article/' + id, {
       observe: 'response',
     });
   }
 
   getProjects(): Observable<EntityResponseTypeProject> {
-    return this.http.get<Project[]>(this.resourceUrl + '/get-projects', {
+    return this.http.get<Project[]>(this.resourceUrl + 'get-projects', {
       observe: 'response',
     });
   }
