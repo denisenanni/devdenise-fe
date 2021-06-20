@@ -1,8 +1,10 @@
 import { GobackDirective } from './goback.directive';
 
+
 describe('GobackDirective', () => {
   it('should create an instance', () => {
-    const directive = new GobackDirective();
+    let location = jasmine.createSpyObj("Location", ["back"]);
+    const directive = new GobackDirective(location);
     expect(directive).toBeTruthy();
   });
 });
