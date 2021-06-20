@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AppService } from '../app.service';
 import { Article } from '../model/article';
+import { WIP } from '../app.constants';
+
 
 @Component({
   selector: 'app-article',
@@ -14,6 +16,8 @@ export class ArticleComponent implements OnInit {
 
   idArticle: number;
   article: Article;
+  notFoundMessage = WIP;
+
 
   constructor(
     protected activatedRoute: ActivatedRoute,

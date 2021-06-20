@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
 import { ArticleCard } from '../model/article';
+import { WIP } from '../app.constants';
 
 @Component({
   selector: 'blog',
@@ -9,6 +10,7 @@ import { ArticleCard } from '../model/article';
 })
 export class BlogComponent implements OnInit {
   articlesCards: ArticleCard[];
+  notFoundMessage = WIP;
 
   constructor(protected appService: AppService) {}
 
