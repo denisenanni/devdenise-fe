@@ -10,18 +10,15 @@ type EntityResponseTypeProject = HttpResponse<Project[]>;
   providedIn: 'root',
 })
 export class AppService {
-  mobile: boolean;
+  isMobile: boolean;
 
   public resourceUrl = SERVER_API_URL;
   constructor(protected http: HttpClient) {
-    this.mobile = this.isMobileDevice();
+    this.isMobile = this.isMobileDevice();
   }
 
   isMobileDevice() {
-    return (
-      typeof window.orientation !== 'undefined' ||
-      navigator.userAgent.indexOf('IEMobile') !== -1
-    );
+    return /Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(navigator.userAgent);
   }
 
   getArticlesCards(): Observable<any> {

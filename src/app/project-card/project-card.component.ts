@@ -17,7 +17,7 @@ export class ProjectCardComponent implements OnInit {
     protected appService: AppService) {}
 
   ngOnInit(): void {
-    this.mobile = this.appService.mobile;
+    this.mobile = this.appService.isMobile;
   }
 
   goToProject() {

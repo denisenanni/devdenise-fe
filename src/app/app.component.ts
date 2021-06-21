@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { AppService } from './app.service';
 import { slideInAnimation } from './route-animation';
 
 @Component({
@@ -9,7 +10,13 @@ import { slideInAnimation } from './route-animation';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  constructor() {
+  isMobile: any;
+  backgroundImage: string;
+  constructor(
+    protected appService: AppService,
+  ) {
+    this.isMobile = appService.isMobile;
+    this.backgroundImage = this.isMobile ? '../assets/bg.jpg' : '../assets/bg-desktop.jpg';
   }
   title = 'DevDenise';
   
