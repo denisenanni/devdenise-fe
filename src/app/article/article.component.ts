@@ -14,7 +14,7 @@ export class ArticleComponent implements OnInit {
   error: string;
   success: string;
 
-  idArticle: number;
+  idArticle: any;
   article: Article;
   notFoundMessage = WIP;
 
