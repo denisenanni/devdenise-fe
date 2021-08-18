@@ -28,7 +28,6 @@ export class ProjectsAndSkillsComponent implements OnInit {
     this.appService.getProjects().subscribe(
       (r: HttpResponse<Project[]>) => {
         this.projects = r.body;
-        console.log('PROJECTS IN PARENT');
         this.success = 'OK';
         this.error = null;
       },

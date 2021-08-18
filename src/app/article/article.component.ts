@@ -30,7 +30,7 @@ export class ArticleComponent implements OnInit {
 
   private getRouteParam() {
     this.activatedRoute.params.subscribe((parameter) => {
-      this.idArticle = Number(parameter.id);
+      this.idArticle = parameter.id;
       this.getArticle();
     });
   }
