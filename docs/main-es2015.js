@@ -484,7 +484,7 @@ class ArticleComponent {
     ngOnInit() { }
     getRouteParam() {
         this.activatedRoute.params.subscribe((parameter) => {
-            this.idArticle = Number(parameter.id);
+            this.idArticle = parameter.id;
             this.getArticle();
         });
     }
@@ -991,7 +991,6 @@ class ProjectsAndSkillsComponent {
     getProjects() {
         this.appService.getProjects().subscribe((r) => {
             this.projects = r.body;
-            console.log('PROJECTS IN PARENT');
             this.success = 'OK';
             this.error = null;
         }, (r) => {

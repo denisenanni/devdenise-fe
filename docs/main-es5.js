@@ -930,7 +930,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var _this = this;
 
           this.activatedRoute.params.subscribe(function (parameter) {
-            _this.idArticle = Number(parameter.id);
+            _this.idArticle = parameter.id;
 
             _this.getArticle();
           });
@@ -2024,7 +2024,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           this.appService.getProjects().subscribe(function (r) {
             _this4.projects = r.body;
-            console.log('PROJECTS IN PARENT');
             _this4.success = 'OK';
             _this4.error = null;
           }, function (r) {
