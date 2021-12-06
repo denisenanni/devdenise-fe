@@ -1,7 +1,7 @@
 articleCards [
     {
         "title": "How to set up a WordPress site on an EC2 AWS instance with an SSL certificate",
-        "text": "
+        "text": ""
     }
 ]
     
@@ -21,6 +21,7 @@ The domain registration at this point will be in process.
 Once processed the request, you’ll be able to see your domain clicking on the option ‘Registered domains’ on the left-hand menu.
 We’ll come back here later to create the record sets.
 </p>
+https://devdenise.s3.eu-west-3.amazonaws.com/articles/1/pending-domain-1200x487.jpg
 <h3>Step 2 – Create the EC2 instance</h3>
 <p>
 Select EC2 among the services in the console.
@@ -33,7 +34,7 @@ You can pick up one already existing (make sure you downloaded it when you creat
 After you downloaded the .pem file proceed clicking launch instance.<br>
 Selecting the instance you can see now the public DNS of it, we will need it to SSH into it.
 </p>
-
+https://devdenise.s3.eu-west-3.amazonaws.com/articles/1/initializing-instance-1200x486.jpg
 <h3>Step 3 – Request an SSL certificate from AWS </h3>
 <p>
 Select ‘Certificate Manager’ in the AWS console.<br>
@@ -47,8 +48,7 @@ Click ‘Review’ and confirm the request.
 Select ‘Continue’.<br>
 If you chose to validate through email you’ll receive an email for every domain you picked, click on the link in the email and click ‘I approve’.<br>
 </p>
-
-
+https://devdenise.s3.eu-west-3.amazonaws.com/articles/1/ssl-pending.jpg
 <h3>Step 4 – Create a load balancer and target group with associated certificate</h3>
 <p>
 After the certificate is approved we can proceed creating the load balancer .
@@ -81,6 +81,7 @@ UPDATE: In order to redirect http to https, once your load balancer is active se
 Select “View/edit rules”.
 Click ‘Edit rules’, eliminate the default action and add the action ‘Redirect to..’, select ‘HTTPS’ on port 443 and update the rule.<br>
 </p>
+
 <h3>Step 5 –  Create the alias records</h3>
 <p>
 Let’s go back to Route 53.
