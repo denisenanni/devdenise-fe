@@ -10,7 +10,7 @@ import { Article } from '../model/article';
 export class HomeComponent implements OnInit {
 
   linkedinProfile = 'https://www.linkedin.com/in/denise-nanni/';
-  gitHubProfile = 'https://github.com/DeniseN90';
+  gitHubProfile = 'https://github.com/denisenanni';
   soundCloudProfile = 'https://soundcloud.com/denise-nanni';
 
 
