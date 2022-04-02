@@ -3,6 +3,10 @@ import { HttpClient, HttpResponse } from '@angular/common/http';
 import { SERVER_API_URL } from './app.constants';
 import { Observable } from 'rxjs';
 import { Project } from './model/project';
+import { of } from 'rxjs';
+import {article_cards} from '../assets/articles/article_cards'
+import { article1 } from '../assets/articles/article1'
+import { projects } from '../assets/projects/projects'
 
 type EntityResponseTypeProject = HttpResponse<Project[]>;
 
@@ -22,18 +26,14 @@ export class AppService {
   }
 
   getArticlesCards(): Observable<any> {
-    return this.http.get(this.resourceUrl + 'get-articles-cards');
+    return of(article_cards);
   }
 
   getArticleById(id: number): Observable<any> {
-    return this.http.get(this.resourceUrl + 'get-article/' + id, {
-      observe: 'response',
-    });
+    return of(article1);
   }
 
-  getProjects(): Observable<EntityResponseTypeProject> {
-    return this.http.get<Project[]>(this.resourceUrl + 'get-projects', {
-      observe: 'response',
-    });
+  getProjects(): Observable<any> {
+    return of(projects);
   }
 }
