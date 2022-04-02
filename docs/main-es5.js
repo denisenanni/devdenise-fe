@@ -262,7 +262,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgStyle"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterOutlet"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_5__["FooterComponent"]],
-      styles: ["footer {\n  background-color: rgba(0, 0, 0, 0.5);\n  height: 1.5rem;\n  position: fixed;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  z-index: 1;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RlbmlzZS9BcHBzL2RldmRlbmlzZS1mZS9zcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usb0NBQUE7RUFDQSxjQUFBO0VBQ0EsZUFBQTtFQUNBLFNBQUE7RUFDQSxRQUFBO0VBQ0EsT0FBQTtFQUNBLFVBQUE7QUNDRiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImZvb3RlciB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcbiAgaGVpZ2h0OiAxLjVyZW07XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgYm90dG9tOiAwO1xuICByaWdodDogMDtcbiAgbGVmdDogMDtcbiAgei1pbmRleDogMTtcbn1cbiIsImZvb3RlciB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcbiAgaGVpZ2h0OiAxLjVyZW07XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgYm90dG9tOiAwO1xuICByaWdodDogMDtcbiAgbGVmdDogMDtcbiAgei1pbmRleDogMTtcbn0iXX0= */"],
+      styles: ["footer {\n  background-color: rgba(0, 0, 0, 0.5);\n  height: 1.5rem;\n  position: fixed;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  z-index: 1;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kZW5pc2VuYW5uaS9Eb2N1bWVudHMvYXBwcy9kZXZkZW5pc2UtZmUvc3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG9DQUFBO0VBQ0EsY0FBQTtFQUNBLGVBQUE7RUFDQSxTQUFBO0VBQ0EsUUFBQTtFQUNBLE9BQUE7RUFDQSxVQUFBO0FDQ0YiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJmb290ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG4gIGhlaWdodDogMS41cmVtO1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGJvdHRvbTogMDtcbiAgcmlnaHQ6IDA7XG4gIGxlZnQ6IDA7XG4gIHotaW5kZXg6IDE7XG59XG4iLCJmb290ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG4gIGhlaWdodDogMS41cmVtO1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGJvdHRvbTogMDtcbiAgcmlnaHQ6IDA7XG4gIGxlZnQ6IDA7XG4gIHotaW5kZXg6IDE7XG59Il19 */"],
       encapsulation: 2,
       data: {
         animation: [_route_animation__WEBPACK_IMPORTED_MODULE_1__["slideInAnimation"]]
@@ -539,7 +539,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! rxjs */
+    "./node_modules/rxjs/_esm2015/index.js");
+    /* harmony import */
+
+
+    var _assets_articles_article_cards__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../assets/articles/article_cards */
+    "./src/assets/articles/article_cards.ts");
+    /* harmony import */
+
+
+    var _assets_articles_article1__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../assets/articles/article1 */
+    "./src/assets/articles/article1.ts");
+    /* harmony import */
+
+
+    var _assets_projects_projects__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../assets/projects/projects */
+    "./src/assets/projects/projects.ts");
+    /* harmony import */
+
+
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/common/http */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
 
@@ -560,21 +584,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "getArticlesCards",
         value: function getArticlesCards() {
-          return this.http.get(this.resourceUrl + 'get-articles-cards');
+          return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(_assets_articles_article_cards__WEBPACK_IMPORTED_MODULE_3__["article_cards"]);
         }
       }, {
         key: "getArticleById",
         value: function getArticleById(id) {
-          return this.http.get(this.resourceUrl + 'get-article/' + id, {
-            observe: 'response'
-          });
+          return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(_assets_articles_article1__WEBPACK_IMPORTED_MODULE_4__["article1"]);
         }
       }, {
         key: "getProjects",
         value: function getProjects() {
-          return this.http.get(this.resourceUrl + 'get-projects', {
-            observe: 'response'
-          });
+          return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(_assets_projects_projects__WEBPACK_IMPORTED_MODULE_5__["projects"]);
         }
       }]);
 
@@ -582,7 +602,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     AppService.ɵfac = function AppService_Factory(t) {
-      return new (t || AppService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]));
+      return new (t || AppService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClient"]));
     };
 
     AppService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
@@ -600,7 +620,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }]
       }], function () {
         return [{
-          type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]
+          type: _angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClient"]
         }];
       }, null);
     })();
@@ -681,9 +701,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         articleCard: "articleCard"
       },
       features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]],
-      decls: 9,
-      vars: 2,
-      consts: [[1, "card", "w-100", "text-center"], [1, "card-header"], [1, "card-title"], [1, "card-body"], [1, "card-text"], [1, "card-link", 3, "click"]],
+      decls: 7,
+      vars: 1,
+      consts: [[1, "card", "w-100", "text-center"], [1, "card-header"], [1, "card-title"], [1, "card-body"], [1, "card-link", 3, "click"]],
       template: function ArticleCardComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
@@ -700,19 +720,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "p", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "button", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "button", 5);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ArticleCardComponent_Template_button_click_7_listener() {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function ArticleCardComponent_Template_button_click_5_listener() {
             return ctx.goToArticle();
           });
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " Read more ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, " Read more ");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -725,13 +739,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.articleCard.title, " ");
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", ctx.articleCard.outline, " ");
         }
       },
-      styles: ["div.card.w-100[_ngcontent-%COMP%] {\n  width: 80vw;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n\na.card-link[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RlbmlzZS9BcHBzL2RldmRlbmlzZS1mZS9zcmMvYXBwL2FydGljbGUtY2FyZC9hcnRpY2xlLWNhcmQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2FydGljbGUtY2FyZC9hcnRpY2xlLWNhcmQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxXQUFBO0VBQ0Esb0NBQUE7QUNDSjs7QURFQTtFQUNJLGVBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2FydGljbGUtY2FyZC9hcnRpY2xlLWNhcmQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJkaXYuY2FyZC53LTEwMCB7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjUpO1xufVxuXG5hLmNhcmQtbGluayB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufSIsImRpdi5jYXJkLnctMTAwIHtcbiAgd2lkdGg6IDgwdnc7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcbn1cblxuYS5jYXJkLWxpbmsge1xuICBjdXJzb3I6IHBvaW50ZXI7XG59Il19 */"]
+      styles: ["div.card.w-100[_ngcontent-%COMP%] {\n  width: 80vw;\n  background-color: rgba(0, 0, 0, 0.5);\n}\n\na.card-link[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kZW5pc2VuYW5uaS9Eb2N1bWVudHMvYXBwcy9kZXZkZW5pc2UtZmUvc3JjL2FwcC9hcnRpY2xlLWNhcmQvYXJ0aWNsZS1jYXJkLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9hcnRpY2xlLWNhcmQvYXJ0aWNsZS1jYXJkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksV0FBQTtFQUNBLG9DQUFBO0FDQ0o7O0FERUE7RUFDSSxlQUFBO0FDQ0oiLCJmaWxlIjoic3JjL2FwcC9hcnRpY2xlLWNhcmQvYXJ0aWNsZS1jYXJkLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiZGl2LmNhcmQudy0xMDAge1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC41KTtcbn1cblxuYS5jYXJkLWxpbmsge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn0iLCJkaXYuY2FyZC53LTEwMCB7XG4gIHdpZHRoOiA4MHZ3O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG59XG5cbmEuY2FyZC1saW5rIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xufSJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -941,7 +951,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var _this2 = this;
 
           this.appService.getArticleById(this.idArticle).subscribe(function (resp) {
-            _this2.article = resp.body;
+            _this2.article = resp;
             _this2.success = 'OK';
             _this2.error = null;
           }, function (resp) {
@@ -1012,7 +1022,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_directives_goback_directive__WEBPACK_IMPORTED_MODULE_4__["GobackDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_5__["NgForOf"]],
-      styles: ["div.container.main[_ngcontent-%COMP%] {\n  max-height: 100vh;\n  overflow-y: scroll;\n}\n\n\n\n.hideSB[_ngcontent-%COMP%]::-webkit-scrollbar {\n  display: none;\n}\n\n\n\n.hideSB[_ngcontent-%COMP%] {\n  -ms-overflow-style: none;\n  \n  scrollbar-width: none;\n  \n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RlbmlzZS9BcHBzL2RldmRlbmlzZS1mZS9zcmMvYXBwL2FydGljbGUvYXJ0aWNsZS5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvYXJ0aWNsZS9hcnRpY2xlLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsaUJBQUE7RUFDQSxrQkFBQTtBQ0NGOztBREVBLGdEQUFBOztBQUNBO0VBQ0UsYUFBQTtBQ0NGOztBREVBLDRDQUFBOztBQUNBO0VBQ0Usd0JBQUE7RUFBMEIsZ0JBQUE7RUFDMUIscUJBQUE7RUFBdUIsWUFBQTtBQ0d6QiIsImZpbGUiOiJzcmMvYXBwL2FydGljbGUvYXJ0aWNsZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdi5jb250YWluZXIubWFpbiB7XG4gIG1heC1oZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdy15OiBzY3JvbGw7XG59XG5cbi8qIEhpZGUgc2Nyb2xsYmFyIGZvciBDaHJvbWUsIFNhZmFyaSBhbmQgT3BlcmEgKi9cbi5oaWRlU0I6Oi13ZWJraXQtc2Nyb2xsYmFyIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cblxuLyogSGlkZSBzY3JvbGxiYXIgZm9yIElFLCBFZGdlIGFuZCBGaXJlZm94ICovXG4uaGlkZVNCIHtcbiAgLW1zLW92ZXJmbG93LXN0eWxlOiBub25lOyAvKiBJRSBhbmQgRWRnZSAqL1xuICBzY3JvbGxiYXItd2lkdGg6IG5vbmU7IC8qIEZpcmVmb3ggKi9cbn1cblxuXG4iLCJkaXYuY29udGFpbmVyLm1haW4ge1xuICBtYXgtaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3cteTogc2Nyb2xsO1xufVxuXG4vKiBIaWRlIHNjcm9sbGJhciBmb3IgQ2hyb21lLCBTYWZhcmkgYW5kIE9wZXJhICovXG4uaGlkZVNCOjotd2Via2l0LXNjcm9sbGJhciB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi8qIEhpZGUgc2Nyb2xsYmFyIGZvciBJRSwgRWRnZSBhbmQgRmlyZWZveCAqL1xuLmhpZGVTQiB7XG4gIC1tcy1vdmVyZmxvdy1zdHlsZTogbm9uZTtcbiAgLyogSUUgYW5kIEVkZ2UgKi9cbiAgc2Nyb2xsYmFyLXdpZHRoOiBub25lO1xuICAvKiBGaXJlZm94ICovXG59Il19 */"]
+      styles: ["div.container.main[_ngcontent-%COMP%] {\n  max-height: 100vh;\n  overflow-y: scroll;\n}\n\n\n\n.hideSB[_ngcontent-%COMP%]::-webkit-scrollbar {\n  display: none;\n}\n\n\n\n.hideSB[_ngcontent-%COMP%] {\n  -ms-overflow-style: none;\n  \n  scrollbar-width: none;\n  \n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kZW5pc2VuYW5uaS9Eb2N1bWVudHMvYXBwcy9kZXZkZW5pc2UtZmUvc3JjL2FwcC9hcnRpY2xlL2FydGljbGUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2FydGljbGUvYXJ0aWNsZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGlCQUFBO0VBQ0Esa0JBQUE7QUNDRjs7QURFQSxnREFBQTs7QUFDQTtFQUNFLGFBQUE7QUNDRjs7QURFQSw0Q0FBQTs7QUFDQTtFQUNFLHdCQUFBO0VBQTBCLGdCQUFBO0VBQzFCLHFCQUFBO0VBQXVCLFlBQUE7QUNHekIiLCJmaWxlIjoic3JjL2FwcC9hcnRpY2xlL2FydGljbGUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJkaXYuY29udGFpbmVyLm1haW4ge1xuICBtYXgtaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3cteTogc2Nyb2xsO1xufVxuXG4vKiBIaWRlIHNjcm9sbGJhciBmb3IgQ2hyb21lLCBTYWZhcmkgYW5kIE9wZXJhICovXG4uaGlkZVNCOjotd2Via2l0LXNjcm9sbGJhciB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi8qIEhpZGUgc2Nyb2xsYmFyIGZvciBJRSwgRWRnZSBhbmQgRmlyZWZveCAqL1xuLmhpZGVTQiB7XG4gIC1tcy1vdmVyZmxvdy1zdHlsZTogbm9uZTsgLyogSUUgYW5kIEVkZ2UgKi9cbiAgc2Nyb2xsYmFyLXdpZHRoOiBub25lOyAvKiBGaXJlZm94ICovXG59XG5cblxuIiwiZGl2LmNvbnRhaW5lci5tYWluIHtcbiAgbWF4LWhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93LXk6IHNjcm9sbDtcbn1cblxuLyogSGlkZSBzY3JvbGxiYXIgZm9yIENocm9tZSwgU2FmYXJpIGFuZCBPcGVyYSAqL1xuLmhpZGVTQjo6LXdlYmtpdC1zY3JvbGxiYXIge1xuICBkaXNwbGF5OiBub25lO1xufVxuXG4vKiBIaWRlIHNjcm9sbGJhciBmb3IgSUUsIEVkZ2UgYW5kIEZpcmVmb3ggKi9cbi5oaWRlU0Ige1xuICAtbXMtb3ZlcmZsb3ctc3R5bGU6IG5vbmU7XG4gIC8qIElFIGFuZCBFZGdlICovXG4gIHNjcm9sbGJhci13aWR0aDogbm9uZTtcbiAgLyogRmlyZWZveCAqL1xufSJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -1406,7 +1416,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
       },
-      styles: ["div.container-fluid[_ngcontent-%COMP%] {\n  font-size: 0.8rem;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RlbmlzZS9BcHBzL2RldmRlbmlzZS1mZS9zcmMvYXBwL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxpQkFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdi5jb250YWluZXItZmx1aWQge1xuICAgIGZvbnQtc2l6ZTogLjhyZW07XG59IiwiZGl2LmNvbnRhaW5lci1mbHVpZCB7XG4gIGZvbnQtc2l6ZTogMC44cmVtO1xufSJdfQ== */"]
+      styles: ["div.container-fluid[_ngcontent-%COMP%] {\n  font-size: 0.8rem;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kZW5pc2VuYW5uaS9Eb2N1bWVudHMvYXBwcy9kZXZkZW5pc2UtZmUvc3JjL2FwcC9mb290ZXIvZm9vdGVyLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9mb290ZXIvZm9vdGVyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksaUJBQUE7QUNDSiIsImZpbGUiOiJzcmMvYXBwL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJkaXYuY29udGFpbmVyLWZsdWlkIHtcbiAgICBmb250LXNpemU6IC44cmVtO1xufSIsImRpdi5jb250YWluZXItZmx1aWQge1xuICBmb250LXNpemU6IDAuOHJlbTtcbn0iXX0= */"]
     });
     /*@__PURE__*/
 
@@ -1571,7 +1581,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_menu_menu_component__WEBPACK_IMPORTED_MODULE_1__["MenuComponent"]],
-      styles: ["div.img-container[_ngcontent-%COMP%] {\n  text-align: center;\n}\n\nimg.img-fluid[_ngcontent-%COMP%] {\n  max-width: 22vw;\n  border: 2px solid;\n}\n\ndiv.col.home-heading[_ngcontent-%COMP%] {\n  margin-top: 13vh;\n}\n\nh1.home-heading[_ngcontent-%COMP%] {\n  font-size: 6vw;\n  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;\n  max-width: 80vh;\n  height: auto;\n  margin: 0 auto;\n  margin-bottom: 4vh;\n}\n\nimg[_ngcontent-%COMP%] {\n  transition: height 0.9s;\n  transition-timing-function: ease-out;\n}\n\ndiv.social-links[_ngcontent-%COMP%] {\n  display: inline;\n}\n\nimg.icons[_ngcontent-%COMP%]:hover {\n  height: 40px;\n  width: 40px;\n}\n\n@media only screen and (hover: none) and (pointer: coarse) {\n  h1.home-heading[_ngcontent-%COMP%] {\n    font-size: 10vw;\n  }\n\n  img.img-fluid[_ngcontent-%COMP%] {\n    max-width: 38vw;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RlbmlzZS9BcHBzL2RldmRlbmlzZS1mZS9zcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQUE7QUNDRjs7QURFQTtFQUNFLGVBQUE7RUFDQSxpQkFBQTtBQ0NGOztBRENBO0VBQ0UsZ0JBQUE7QUNFRjs7QURDQTtFQUNFLGNBQUE7RUFDQSxvSkFBQTtFQUVBLGVBQUE7RUFDQSxZQUFBO0VBQ0EsY0FBQTtFQUNBLGtCQUFBO0FDQ0Y7O0FERUE7RUFDRSx1QkFBQTtFQUNBLG9DQUFBO0FDQ0Y7O0FERUE7RUFDRSxlQUFBO0FDQ0Y7O0FER0E7RUFDRSxZQUFBO0VBQ0EsV0FBQTtBQ0FGOztBRElBO0VBQ0U7SUFDRSxlQUFBO0VDREY7O0VESUE7SUFDRSxlQUFBO0VDREY7QUFDRiIsImZpbGUiOiJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdi5pbWctY29udGFpbmVyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG5pbWcuaW1nLWZsdWlkIHtcbiAgbWF4LXdpZHRoOiAyMnZ3O1xuICBib3JkZXI6IDJweCBzb2xpZDtcbn1cbmRpdi5jb2wuaG9tZS1oZWFkaW5nIHtcbiAgbWFyZ2luLXRvcDogMTN2aDtcbn1cblxuaDEuaG9tZS1oZWFkaW5nIHtcbiAgZm9udC1zaXplOiA2dnc7XG4gIHRleHQtc2hhZG93OiAwIDAgMTBweCAjZmZmLCAwIDAgMjBweCAjZmZmLCAwIDAgMzBweCAjZmZmLCAwIDAgNDBweCAjZmYwMGRlLFxuICAgIDAgMCA3MHB4ICNmZjAwZGUsIDAgMCA4MHB4ICNmZjAwZGUsIDAgMCAxMDBweCAjZmYwMGRlLCAwIDAgMTUwcHggI2ZmMDBkZTtcbiAgbWF4LXdpZHRoOiA4MHZoO1xuICBoZWlnaHQ6IGF1dG87XG4gIG1hcmdpbjogMCBhdXRvO1xuICBtYXJnaW4tYm90dG9tOiA0dmg7XG59XG5cbmltZyB7XG4gIHRyYW5zaXRpb246IGhlaWdodCAwLjlzO1xuICB0cmFuc2l0aW9uLXRpbWluZy1mdW5jdGlvbjogZWFzZS1vdXQ7XG59XG5cbmRpdi5zb2NpYWwtbGlua3Mge1xuICBkaXNwbGF5OiBpbmxpbmU7XG4gIFxufVxuXG5pbWcuaWNvbnM6aG92ZXJ7XG4gIGhlaWdodDogNDBweDtcbiAgd2lkdGg6IDQwcHg7XG5cbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAoaG92ZXI6IG5vbmUpIGFuZCAocG9pbnRlcjogY29hcnNlKSB7XG4gIGgxLmhvbWUtaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAxMHZ3O1xuICB9XG5cbiAgaW1nLmltZy1mbHVpZCB7XG4gICAgbWF4LXdpZHRoOiAzOHZ3O1xuICB9XG59XG4iLCJkaXYuaW1nLWNvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuaW1nLmltZy1mbHVpZCB7XG4gIG1heC13aWR0aDogMjJ2dztcbiAgYm9yZGVyOiAycHggc29saWQ7XG59XG5cbmRpdi5jb2wuaG9tZS1oZWFkaW5nIHtcbiAgbWFyZ2luLXRvcDogMTN2aDtcbn1cblxuaDEuaG9tZS1oZWFkaW5nIHtcbiAgZm9udC1zaXplOiA2dnc7XG4gIHRleHQtc2hhZG93OiAwIDAgMTBweCAjZmZmLCAwIDAgMjBweCAjZmZmLCAwIDAgMzBweCAjZmZmLCAwIDAgNDBweCAjZmYwMGRlLCAwIDAgNzBweCAjZmYwMGRlLCAwIDAgODBweCAjZmYwMGRlLCAwIDAgMTAwcHggI2ZmMDBkZSwgMCAwIDE1MHB4ICNmZjAwZGU7XG4gIG1heC13aWR0aDogODB2aDtcbiAgaGVpZ2h0OiBhdXRvO1xuICBtYXJnaW46IDAgYXV0bztcbiAgbWFyZ2luLWJvdHRvbTogNHZoO1xufVxuXG5pbWcge1xuICB0cmFuc2l0aW9uOiBoZWlnaHQgMC45cztcbiAgdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGVhc2Utb3V0O1xufVxuXG5kaXYuc29jaWFsLWxpbmtzIHtcbiAgZGlzcGxheTogaW5saW5lO1xufVxuXG5pbWcuaWNvbnM6aG92ZXIge1xuICBoZWlnaHQ6IDQwcHg7XG4gIHdpZHRoOiA0MHB4O1xufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChob3Zlcjogbm9uZSkgYW5kIChwb2ludGVyOiBjb2Fyc2UpIHtcbiAgaDEuaG9tZS1oZWFkaW5nIHtcbiAgICBmb250LXNpemU6IDEwdnc7XG4gIH1cblxuICBpbWcuaW1nLWZsdWlkIHtcbiAgICBtYXgtd2lkdGg6IDM4dnc7XG4gIH1cbn0iXX0= */"]
+      styles: ["div.img-container[_ngcontent-%COMP%] {\n  text-align: center;\n}\n\nimg.img-fluid[_ngcontent-%COMP%] {\n  max-width: 22vw;\n  border: 2px solid;\n}\n\ndiv.col.home-heading[_ngcontent-%COMP%] {\n  margin-top: 13vh;\n}\n\nh1.home-heading[_ngcontent-%COMP%] {\n  font-size: 6vw;\n  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;\n  max-width: 80vh;\n  height: auto;\n  margin: 0 auto;\n  margin-bottom: 4vh;\n}\n\nimg[_ngcontent-%COMP%] {\n  transition: height 0.9s;\n  transition-timing-function: ease-out;\n}\n\ndiv.social-links[_ngcontent-%COMP%] {\n  display: inline;\n}\n\nimg.icons[_ngcontent-%COMP%]:hover {\n  height: 40px;\n  width: 40px;\n}\n\n@media only screen and (hover: none) and (pointer: coarse) {\n  h1.home-heading[_ngcontent-%COMP%] {\n    font-size: 10vw;\n  }\n\n  img.img-fluid[_ngcontent-%COMP%] {\n    max-width: 38vw;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kZW5pc2VuYW5uaS9Eb2N1bWVudHMvYXBwcy9kZXZkZW5pc2UtZmUvc3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2hvbWUvaG9tZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFBO0FDQ0Y7O0FERUE7RUFDRSxlQUFBO0VBQ0EsaUJBQUE7QUNDRjs7QURDQTtFQUNFLGdCQUFBO0FDRUY7O0FEQ0E7RUFDRSxjQUFBO0VBQ0Esb0pBQUE7RUFFQSxlQUFBO0VBQ0EsWUFBQTtFQUNBLGNBQUE7RUFDQSxrQkFBQTtBQ0NGOztBREVBO0VBQ0UsdUJBQUE7RUFDQSxvQ0FBQTtBQ0NGOztBREVBO0VBQ0UsZUFBQTtBQ0NGOztBREdBO0VBQ0UsWUFBQTtFQUNBLFdBQUE7QUNBRjs7QURJQTtFQUNFO0lBQ0UsZUFBQTtFQ0RGOztFRElBO0lBQ0UsZUFBQTtFQ0RGO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJkaXYuaW1nLWNvbnRhaW5lciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuaW1nLmltZy1mbHVpZCB7XG4gIG1heC13aWR0aDogMjJ2dztcbiAgYm9yZGVyOiAycHggc29saWQ7XG59XG5kaXYuY29sLmhvbWUtaGVhZGluZyB7XG4gIG1hcmdpbi10b3A6IDEzdmg7XG59XG5cbmgxLmhvbWUtaGVhZGluZyB7XG4gIGZvbnQtc2l6ZTogNnZ3O1xuICB0ZXh0LXNoYWRvdzogMCAwIDEwcHggI2ZmZiwgMCAwIDIwcHggI2ZmZiwgMCAwIDMwcHggI2ZmZiwgMCAwIDQwcHggI2ZmMDBkZSxcbiAgICAwIDAgNzBweCAjZmYwMGRlLCAwIDAgODBweCAjZmYwMGRlLCAwIDAgMTAwcHggI2ZmMDBkZSwgMCAwIDE1MHB4ICNmZjAwZGU7XG4gIG1heC13aWR0aDogODB2aDtcbiAgaGVpZ2h0OiBhdXRvO1xuICBtYXJnaW46IDAgYXV0bztcbiAgbWFyZ2luLWJvdHRvbTogNHZoO1xufVxuXG5pbWcge1xuICB0cmFuc2l0aW9uOiBoZWlnaHQgMC45cztcbiAgdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGVhc2Utb3V0O1xufVxuXG5kaXYuc29jaWFsLWxpbmtzIHtcbiAgZGlzcGxheTogaW5saW5lO1xuICBcbn1cblxuaW1nLmljb25zOmhvdmVye1xuICBoZWlnaHQ6IDQwcHg7XG4gIHdpZHRoOiA0MHB4O1xuXG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKGhvdmVyOiBub25lKSBhbmQgKHBvaW50ZXI6IGNvYXJzZSkge1xuICBoMS5ob21lLWhlYWRpbmcge1xuICAgIGZvbnQtc2l6ZTogMTB2dztcbiAgfVxuXG4gIGltZy5pbWctZmx1aWQge1xuICAgIG1heC13aWR0aDogMzh2dztcbiAgfVxufVxuIiwiZGl2LmltZy1jb250YWluZXIge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbmltZy5pbWctZmx1aWQge1xuICBtYXgtd2lkdGg6IDIydnc7XG4gIGJvcmRlcjogMnB4IHNvbGlkO1xufVxuXG5kaXYuY29sLmhvbWUtaGVhZGluZyB7XG4gIG1hcmdpbi10b3A6IDEzdmg7XG59XG5cbmgxLmhvbWUtaGVhZGluZyB7XG4gIGZvbnQtc2l6ZTogNnZ3O1xuICB0ZXh0LXNoYWRvdzogMCAwIDEwcHggI2ZmZiwgMCAwIDIwcHggI2ZmZiwgMCAwIDMwcHggI2ZmZiwgMCAwIDQwcHggI2ZmMDBkZSwgMCAwIDcwcHggI2ZmMDBkZSwgMCAwIDgwcHggI2ZmMDBkZSwgMCAwIDEwMHB4ICNmZjAwZGUsIDAgMCAxNTBweCAjZmYwMGRlO1xuICBtYXgtd2lkdGg6IDgwdmg7XG4gIGhlaWdodDogYXV0bztcbiAgbWFyZ2luOiAwIGF1dG87XG4gIG1hcmdpbi1ib3R0b206IDR2aDtcbn1cblxuaW1nIHtcbiAgdHJhbnNpdGlvbjogaGVpZ2h0IDAuOXM7XG4gIHRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBlYXNlLW91dDtcbn1cblxuZGl2LnNvY2lhbC1saW5rcyB7XG4gIGRpc3BsYXk6IGlubGluZTtcbn1cblxuaW1nLmljb25zOmhvdmVyIHtcbiAgaGVpZ2h0OiA0MHB4O1xuICB3aWR0aDogNDBweDtcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAoaG92ZXI6IG5vbmUpIGFuZCAocG9pbnRlcjogY29hcnNlKSB7XG4gIGgxLmhvbWUtaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAxMHZ3O1xuICB9XG5cbiAgaW1nLmltZy1mbHVpZCB7XG4gICAgbWF4LXdpZHRoOiAzOHZ3O1xuICB9XG59Il19 */"]
     });
     /*@__PURE__*/
 
@@ -1674,7 +1684,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterLinkWithHref"]],
-      styles: ["ul.menu[_ngcontent-%COMP%] {\n  box-sizing: border-box;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  max-width: 100%;\n  list-style-type: none;\n  margin: 5vh auto;\n  padding: 0;\n  display: block;\n  border-top: 0.5px solid #fff;\n}\n\nul.menu[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%] {\n  display: inline-block;\n  margin: 0 1vw;\n  padding: 0;\n  transition: padding 0.5s, background-color 0.5s;\n  transition-timing-function: ease-out;\n}\n\nli[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: white;\n  text-align: center;\n  text-decoration: none;\n  font-size: 2vw;\n}\n\nul.menu[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]:hover {\n  background-color: rgba(7, 10, 26, 0.6);\n  padding: 1vw;\n}\n\n@media only screen and (hover: none) and (pointer: coarse) {\n  li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    font-size: initial;\n  }\n\n  ul.menu[_ngcontent-%COMP%] {\n    border-top: none;\n  }\n\n  ul.menu[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%] {\n    display: block;\n    padding: 0.2rem;\n  }\n\n  li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:active {\n    background-color: rgba(7, 10, 26, 0.6);\n    padding: 1vw;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RlbmlzZS9BcHBzL2RldmRlbmlzZS1mZS9zcmMvYXBwL21lbnUvbWVudS5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvbWVudS9tZW51LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usc0JBQUE7RUFDQSwwQkFBQTtFQUFBLHVCQUFBO0VBQUEsa0JBQUE7RUFDQSxlQUFBO0VBQ0EscUJBQUE7RUFDQSxnQkFBQTtFQUNBLFVBQUE7RUFDQSxjQUFBO0VBQ0EsNEJBQUE7QUNDRjs7QURFQTtFQUNFLHFCQUFBO0VBQ0EsYUFBQTtFQUNBLFVBQUE7RUFDQSwrQ0FBQTtFQUNBLG9DQUFBO0FDQ0Y7O0FERUE7RUFDRSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxxQkFBQTtFQUNBLGNBQUE7QUNDRjs7QURFQTtFQUNFLHNDQUFBO0VBQ0EsWUFBQTtBQ0NGOztBREVBO0VBQ0U7SUFDRSxrQkFBQTtFQ0NGOztFREVBO0lBQ0UsZ0JBQUE7RUNDRjs7RURFQTtJQUNFLGNBQUE7SUFDQSxlQUFBO0VDQ0Y7O0VERUE7SUFDRSxzQ0FBQTtJQUNBLFlBQUE7RUNDRjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvbWVudS9tZW51LmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsidWwubWVudSB7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIHdpZHRoOiBmaXQtY29udGVudDtcbiAgbWF4LXdpZHRoOiAxMDAlO1xuICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XG4gIG1hcmdpbjogNXZoIGF1dG87XG4gIHBhZGRpbmc6IDA7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBib3JkZXItdG9wOiAwLjVweCBzb2xpZCAjZmZmO1xufVxuXG51bC5tZW51ID4gbGkge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIG1hcmdpbjogMCAxdnc7XG4gIHBhZGRpbmc6IDA7XG4gIHRyYW5zaXRpb246IHBhZGRpbmcgMC41cywgYmFja2dyb3VuZC1jb2xvciAwLjVzO1xuICB0cmFuc2l0aW9uLXRpbWluZy1mdW5jdGlvbjogZWFzZS1vdXQ7XG59XG5cbmxpIGEge1xuICBjb2xvcjogd2hpdGU7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBmb250LXNpemU6IDJ2dztcbn1cblxudWwubWVudSA+IGxpOmhvdmVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSg3LCAxMCwgMjYsIDAuNik7XG4gIHBhZGRpbmc6IDF2dztcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAoaG92ZXI6IG5vbmUpIGFuZCAocG9pbnRlcjogY29hcnNlKSB7XG4gIGxpIGEge1xuICAgIGZvbnQtc2l6ZTogaW5pdGlhbDtcbiAgfVxuXG4gIHVsLm1lbnUge1xuICAgIGJvcmRlci10b3A6IG5vbmU7XG4gIH1cblxuICB1bC5tZW51ID4gbGkge1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHBhZGRpbmc6IDAuMnJlbTtcbiAgfVxuXG4gIGxpIGE6YWN0aXZlIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDcsIDEwLCAyNiwgMC42KTtcbiAgICBwYWRkaW5nOiAxdnc7XG4gIH1cbn1cbiIsInVsLm1lbnUge1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICB3aWR0aDogZml0LWNvbnRlbnQ7XG4gIG1heC13aWR0aDogMTAwJTtcbiAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xuICBtYXJnaW46IDV2aCBhdXRvO1xuICBwYWRkaW5nOiAwO1xuICBkaXNwbGF5OiBibG9jaztcbiAgYm9yZGVyLXRvcDogMC41cHggc29saWQgI2ZmZjtcbn1cblxudWwubWVudSA+IGxpIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBtYXJnaW46IDAgMXZ3O1xuICBwYWRkaW5nOiAwO1xuICB0cmFuc2l0aW9uOiBwYWRkaW5nIDAuNXMsIGJhY2tncm91bmQtY29sb3IgMC41cztcbiAgdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGVhc2Utb3V0O1xufVxuXG5saSBhIHtcbiAgY29sb3I6IHdoaXRlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgZm9udC1zaXplOiAydnc7XG59XG5cbnVsLm1lbnUgPiBsaTpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoNywgMTAsIDI2LCAwLjYpO1xuICBwYWRkaW5nOiAxdnc7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKGhvdmVyOiBub25lKSBhbmQgKHBvaW50ZXI6IGNvYXJzZSkge1xuICBsaSBhIHtcbiAgICBmb250LXNpemU6IGluaXRpYWw7XG4gIH1cblxuICB1bC5tZW51IHtcbiAgICBib3JkZXItdG9wOiBub25lO1xuICB9XG5cbiAgdWwubWVudSA+IGxpIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBwYWRkaW5nOiAwLjJyZW07XG4gIH1cblxuICBsaSBhOmFjdGl2ZSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSg3LCAxMCwgMjYsIDAuNik7XG4gICAgcGFkZGluZzogMXZ3O1xuICB9XG59Il19 */"]
+      styles: ["ul.menu[_ngcontent-%COMP%] {\n  box-sizing: border-box;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  max-width: 100%;\n  list-style-type: none;\n  margin: 5vh auto;\n  padding: 0;\n  display: block;\n  border-top: 0.5px solid #fff;\n}\n\nul.menu[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%] {\n  display: inline-block;\n  margin: 0 1vw;\n  padding: 0;\n  transition: padding 0.5s, background-color 0.5s;\n  transition-timing-function: ease-out;\n}\n\nli[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: white;\n  text-align: center;\n  text-decoration: none;\n  font-size: 2vw;\n}\n\nul.menu[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%]:hover {\n  background-color: rgba(7, 10, 26, 0.6);\n  padding: 1vw;\n}\n\n@media only screen and (hover: none) and (pointer: coarse) {\n  li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n    font-size: initial;\n  }\n\n  ul.menu[_ngcontent-%COMP%] {\n    border-top: none;\n  }\n\n  ul.menu[_ngcontent-%COMP%]    > li[_ngcontent-%COMP%] {\n    display: block;\n    padding: 0.2rem;\n  }\n\n  li[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:active {\n    background-color: rgba(7, 10, 26, 0.6);\n    padding: 1vw;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kZW5pc2VuYW5uaS9Eb2N1bWVudHMvYXBwcy9kZXZkZW5pc2UtZmUvc3JjL2FwcC9tZW51L21lbnUuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL21lbnUvbWVudS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHNCQUFBO0VBQ0EsMEJBQUE7RUFBQSx1QkFBQTtFQUFBLGtCQUFBO0VBQ0EsZUFBQTtFQUNBLHFCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxVQUFBO0VBQ0EsY0FBQTtFQUNBLDRCQUFBO0FDQ0Y7O0FERUE7RUFDRSxxQkFBQTtFQUNBLGFBQUE7RUFDQSxVQUFBO0VBQ0EsK0NBQUE7RUFDQSxvQ0FBQTtBQ0NGOztBREVBO0VBQ0UsWUFBQTtFQUNBLGtCQUFBO0VBQ0EscUJBQUE7RUFDQSxjQUFBO0FDQ0Y7O0FERUE7RUFDRSxzQ0FBQTtFQUNBLFlBQUE7QUNDRjs7QURFQTtFQUNFO0lBQ0Usa0JBQUE7RUNDRjs7RURFQTtJQUNFLGdCQUFBO0VDQ0Y7O0VERUE7SUFDRSxjQUFBO0lBQ0EsZUFBQTtFQ0NGOztFREVBO0lBQ0Usc0NBQUE7SUFDQSxZQUFBO0VDQ0Y7QUFDRiIsImZpbGUiOiJzcmMvYXBwL21lbnUvbWVudS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbInVsLm1lbnUge1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICB3aWR0aDogZml0LWNvbnRlbnQ7XG4gIG1heC13aWR0aDogMTAwJTtcbiAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xuICBtYXJnaW46IDV2aCBhdXRvO1xuICBwYWRkaW5nOiAwO1xuICBkaXNwbGF5OiBibG9jaztcbiAgYm9yZGVyLXRvcDogMC41cHggc29saWQgI2ZmZjtcbn1cblxudWwubWVudSA+IGxpIHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBtYXJnaW46IDAgMXZ3O1xuICBwYWRkaW5nOiAwO1xuICB0cmFuc2l0aW9uOiBwYWRkaW5nIDAuNXMsIGJhY2tncm91bmQtY29sb3IgMC41cztcbiAgdHJhbnNpdGlvbi10aW1pbmctZnVuY3Rpb246IGVhc2Utb3V0O1xufVxuXG5saSBhIHtcbiAgY29sb3I6IHdoaXRlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgZm9udC1zaXplOiAydnc7XG59XG5cbnVsLm1lbnUgPiBsaTpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoNywgMTAsIDI2LCAwLjYpO1xuICBwYWRkaW5nOiAxdnc7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKGhvdmVyOiBub25lKSBhbmQgKHBvaW50ZXI6IGNvYXJzZSkge1xuICBsaSBhIHtcbiAgICBmb250LXNpemU6IGluaXRpYWw7XG4gIH1cblxuICB1bC5tZW51IHtcbiAgICBib3JkZXItdG9wOiBub25lO1xuICB9XG5cbiAgdWwubWVudSA+IGxpIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBwYWRkaW5nOiAwLjJyZW07XG4gIH1cblxuICBsaSBhOmFjdGl2ZSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSg3LCAxMCwgMjYsIDAuNik7XG4gICAgcGFkZGluZzogMXZ3O1xuICB9XG59XG4iLCJ1bC5tZW51IHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgd2lkdGg6IGZpdC1jb250ZW50O1xuICBtYXgtd2lkdGg6IDEwMCU7XG4gIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcbiAgbWFyZ2luOiA1dmggYXV0bztcbiAgcGFkZGluZzogMDtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGJvcmRlci10b3A6IDAuNXB4IHNvbGlkICNmZmY7XG59XG5cbnVsLm1lbnUgPiBsaSB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgbWFyZ2luOiAwIDF2dztcbiAgcGFkZGluZzogMDtcbiAgdHJhbnNpdGlvbjogcGFkZGluZyAwLjVzLCBiYWNrZ3JvdW5kLWNvbG9yIDAuNXM7XG4gIHRyYW5zaXRpb24tdGltaW5nLWZ1bmN0aW9uOiBlYXNlLW91dDtcbn1cblxubGkgYSB7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIGZvbnQtc2l6ZTogMnZ3O1xufVxuXG51bC5tZW51ID4gbGk6aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDcsIDEwLCAyNiwgMC42KTtcbiAgcGFkZGluZzogMXZ3O1xufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChob3Zlcjogbm9uZSkgYW5kIChwb2ludGVyOiBjb2Fyc2UpIHtcbiAgbGkgYSB7XG4gICAgZm9udC1zaXplOiBpbml0aWFsO1xuICB9XG5cbiAgdWwubWVudSB7XG4gICAgYm9yZGVyLXRvcDogbm9uZTtcbiAgfVxuXG4gIHVsLm1lbnUgPiBsaSB7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgcGFkZGluZzogMC4ycmVtO1xuICB9XG5cbiAgbGkgYTphY3RpdmUge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoNywgMTAsIDI2LCAwLjYpO1xuICAgIHBhZGRpbmc6IDF2dztcbiAgfVxufSJdfQ== */"]
     });
     /*@__PURE__*/
 
@@ -1882,7 +1892,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_angular_common__WEBPACK_IMPORTED_MODULE_3__["NgStyle"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgIf"]],
-      styles: ["div.card[_ngcontent-%COMP%] {\n  background: transparent;\n  height: auto;\n  background-size: cover;\n  border: transparent;\n}\n\na.card-link[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n\ndiv.layer[_ngcontent-%COMP%] {\n  background-color: rgba(0, 0, 0, 0.6);\n  height: inherit;\n  padding: 1rem;\n}\n\np.card-text[_ngcontent-%COMP%] {\n  font-size: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RlbmlzZS9BcHBzL2RldmRlbmlzZS1mZS9zcmMvYXBwL3Byb2plY3QtY2FyZC9wcm9qZWN0LWNhcmQuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3Byb2plY3QtY2FyZC9wcm9qZWN0LWNhcmQuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1QkFBQTtFQUNBLFlBQUE7RUFDQSxzQkFBQTtFQUNBLG1CQUFBO0FDQ0Y7O0FERUE7RUFDRSxlQUFBO0FDQ0Y7O0FERUE7RUFDRSxvQ0FBQTtFQUNBLGVBQUE7RUFDQSxhQUFBO0FDQ0Y7O0FEUUE7RUFDSSxlQUFBO0FDTEoiLCJmaWxlIjoic3JjL2FwcC9wcm9qZWN0LWNhcmQvcHJvamVjdC1jYXJkLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiZGl2LmNhcmQge1xuICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDtcbiAgaGVpZ2h0OiBhdXRvO1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICBib3JkZXI6IHRyYW5zcGFyZW50O1xufVxuXG5hLmNhcmQtbGluayB7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuZGl2LmxheWVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAwLCAwLjYpO1xuICBoZWlnaHQ6IGluaGVyaXQ7XG4gIHBhZGRpbmc6IDFyZW07XG5cbn1cblxuXG5kaXYuZm9vdGVyIHtcblxufVxuXG5wLmNhcmQtdGV4dCB7XG4gICAgZm9udC1zaXplOiAxcmVtO1xufSIsImRpdi5jYXJkIHtcbiAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XG4gIGhlaWdodDogYXV0bztcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgYm9yZGVyOiB0cmFuc3BhcmVudDtcbn1cblxuYS5jYXJkLWxpbmsge1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbmRpdi5sYXllciB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC42KTtcbiAgaGVpZ2h0OiBpbmhlcml0O1xuICBwYWRkaW5nOiAxcmVtO1xufVxuXG5wLmNhcmQtdGV4dCB7XG4gIGZvbnQtc2l6ZTogMXJlbTtcbn0iXX0= */"]
+      styles: ["div.card[_ngcontent-%COMP%] {\n  background: transparent;\n  height: auto;\n  background-size: cover;\n  border: transparent;\n}\n\na.card-link[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n\ndiv.layer[_ngcontent-%COMP%] {\n  background-color: rgba(0, 0, 0, 0.6);\n  height: inherit;\n  padding: 1rem;\n}\n\np.card-text[_ngcontent-%COMP%] {\n  font-size: 1rem;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kZW5pc2VuYW5uaS9Eb2N1bWVudHMvYXBwcy9kZXZkZW5pc2UtZmUvc3JjL2FwcC9wcm9qZWN0LWNhcmQvcHJvamVjdC1jYXJkLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9wcm9qZWN0LWNhcmQvcHJvamVjdC1jYXJkLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsdUJBQUE7RUFDQSxZQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtBQ0NGOztBREVBO0VBQ0UsZUFBQTtBQ0NGOztBREVBO0VBQ0Usb0NBQUE7RUFDQSxlQUFBO0VBQ0EsYUFBQTtBQ0NGOztBRFFBO0VBQ0ksZUFBQTtBQ0xKIiwiZmlsZSI6InNyYy9hcHAvcHJvamVjdC1jYXJkL3Byb2plY3QtY2FyZC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImRpdi5jYXJkIHtcbiAgYmFja2dyb3VuZDogdHJhbnNwYXJlbnQ7XG4gIGhlaWdodDogYXV0bztcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcbiAgYm9yZGVyOiB0cmFuc3BhcmVudDtcbn1cblxuYS5jYXJkLWxpbmsge1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbmRpdi5sYXllciB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC42KTtcbiAgaGVpZ2h0OiBpbmhlcml0O1xuICBwYWRkaW5nOiAxcmVtO1xuXG59XG5cblxuZGl2LmZvb3RlciB7XG5cbn1cblxucC5jYXJkLXRleHQge1xuICAgIGZvbnQtc2l6ZTogMXJlbTtcbn0iLCJkaXYuY2FyZCB7XG4gIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xuICBoZWlnaHQ6IGF1dG87XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIGJvcmRlcjogdHJhbnNwYXJlbnQ7XG59XG5cbmEuY2FyZC1saW5rIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG5kaXYubGF5ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNik7XG4gIGhlaWdodDogaW5oZXJpdDtcbiAgcGFkZGluZzogMXJlbTtcbn1cblxucC5jYXJkLXRleHQge1xuICBmb250LXNpemU6IDFyZW07XG59Il19 */"]
     });
     /*@__PURE__*/
 
@@ -2023,7 +2033,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var _this4 = this;
 
           this.appService.getProjects().subscribe(function (r) {
-            _this4.projects = r.body;
+            _this4.projects = r;
             _this4.success = 'OK';
             _this4.error = null;
           }, function (r) {
@@ -2124,7 +2134,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_directives_goback_directive__WEBPACK_IMPORTED_MODULE_2__["GobackDirective"], _angular_common__WEBPACK_IMPORTED_MODULE_3__["NgForOf"], _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_4__["ProjectCardComponent"]],
-      styles: ["button[_ngcontent-%COMP%] {\n  padding: 0.5vh;\n  margin: 0.5vh;\n  background-color: rgba(255, 255, 255, 0.5);\n}\n\ndiv.project[_ngcontent-%COMP%] {\n  width: 30vw;\n}\n\ndiv.title[_ngcontent-%COMP%] {\n  border-bottom: 1px solid #fff;\n  margin: 0 auto;\n}\n\ndiv.skills[_ngcontent-%COMP%] {\n  font-size: 1.2rem;\n}\n\n@media only screen and (hover: none) and (pointer: coarse) {\n  div.project[_ngcontent-%COMP%] {\n    width: 80vw;\n    margin: 0 auto;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2RlbmlzZS9BcHBzL2RldmRlbmlzZS1mZS9zcmMvYXBwL3Byb2plY3RzLWFuZC1za2lsbHMvcHJvamVjdHMtYW5kLXNraWxscy5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvcHJvamVjdHMtYW5kLXNraWxscy9wcm9qZWN0cy1hbmQtc2tpbGxzLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsY0FBQTtFQUNBLGFBQUE7RUFDQSwwQ0FBQTtBQ0NGOztBREVBO0VBQ0UsV0FBQTtBQ0NGOztBREVBO0VBQ0UsNkJBQUE7RUFDQSxjQUFBO0FDQ0Y7O0FERUE7RUFDRSxpQkFBQTtBQ0NGOztBREVBO0VBQ0U7SUFDRSxXQUFBO0lBQ0EsY0FBQTtFQ0NGO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9wcm9qZWN0cy1hbmQtc2tpbGxzL3Byb2plY3RzLWFuZC1za2lsbHMuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJidXR0b24ge1xuICBwYWRkaW5nOiAwLjV2aDtcbiAgbWFyZ2luOiAwLjV2aDtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjUpO1xufVxuXG5kaXYucHJvamVjdCB7XG4gIHdpZHRoOiAzMHZ3O1xufVxuXG5kaXYudGl0bGUge1xuICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2ZmZjtcbiAgbWFyZ2luOiAwIGF1dG87XG59XG5cbmRpdi5za2lsbHMge1xuICBmb250LXNpemU6IDEuMnJlbTtcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAoaG92ZXI6IG5vbmUpIGFuZCAocG9pbnRlcjogY29hcnNlKSB7XG4gIGRpdi5wcm9qZWN0IHtcbiAgICB3aWR0aDogODB2dztcbiAgICBtYXJnaW46IDAgYXV0bztcbiAgfVxufVxuIiwiYnV0dG9uIHtcbiAgcGFkZGluZzogMC41dmg7XG4gIG1hcmdpbjogMC41dmg7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC41KTtcbn1cblxuZGl2LnByb2plY3Qge1xuICB3aWR0aDogMzB2dztcbn1cblxuZGl2LnRpdGxlIHtcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNmZmY7XG4gIG1hcmdpbjogMCBhdXRvO1xufVxuXG5kaXYuc2tpbGxzIHtcbiAgZm9udC1zaXplOiAxLjJyZW07XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKGhvdmVyOiBub25lKSBhbmQgKHBvaW50ZXI6IGNvYXJzZSkge1xuICBkaXYucHJvamVjdCB7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgbWFyZ2luOiAwIGF1dG87XG4gIH1cbn0iXX0= */"]
+      styles: ["button[_ngcontent-%COMP%] {\n  padding: 0.5vh;\n  margin: 0.5vh;\n  background-color: rgba(255, 255, 255, 0.5);\n}\n\ndiv.project[_ngcontent-%COMP%] {\n  width: 30vw;\n}\n\ndiv.title[_ngcontent-%COMP%] {\n  border-bottom: 1px solid #fff;\n  margin: 0 auto;\n}\n\ndiv.skills[_ngcontent-%COMP%] {\n  font-size: 1.2rem;\n}\n\n@media only screen and (hover: none) and (pointer: coarse) {\n  div.project[_ngcontent-%COMP%] {\n    width: 80vw;\n    margin: 0 auto;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kZW5pc2VuYW5uaS9Eb2N1bWVudHMvYXBwcy9kZXZkZW5pc2UtZmUvc3JjL2FwcC9wcm9qZWN0cy1hbmQtc2tpbGxzL3Byb2plY3RzLWFuZC1za2lsbHMuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL3Byb2plY3RzLWFuZC1za2lsbHMvcHJvamVjdHMtYW5kLXNraWxscy5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGNBQUE7RUFDQSxhQUFBO0VBQ0EsMENBQUE7QUNDRjs7QURFQTtFQUNFLFdBQUE7QUNDRjs7QURFQTtFQUNFLDZCQUFBO0VBQ0EsY0FBQTtBQ0NGOztBREVBO0VBQ0UsaUJBQUE7QUNDRjs7QURFQTtFQUNFO0lBQ0UsV0FBQTtJQUNBLGNBQUE7RUNDRjtBQUNGIiwiZmlsZSI6InNyYy9hcHAvcHJvamVjdHMtYW5kLXNraWxscy9wcm9qZWN0cy1hbmQtc2tpbGxzLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYnV0dG9uIHtcbiAgcGFkZGluZzogMC41dmg7XG4gIG1hcmdpbjogMC41dmg7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC41KTtcbn1cblxuZGl2LnByb2plY3Qge1xuICB3aWR0aDogMzB2dztcbn1cblxuZGl2LnRpdGxlIHtcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNmZmY7XG4gIG1hcmdpbjogMCBhdXRvO1xufVxuXG5kaXYuc2tpbGxzIHtcbiAgZm9udC1zaXplOiAxLjJyZW07XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKGhvdmVyOiBub25lKSBhbmQgKHBvaW50ZXI6IGNvYXJzZSkge1xuICBkaXYucHJvamVjdCB7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgbWFyZ2luOiAwIGF1dG87XG4gIH1cbn1cbiIsImJ1dHRvbiB7XG4gIHBhZGRpbmc6IDAuNXZoO1xuICBtYXJnaW46IDAuNXZoO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuNSk7XG59XG5cbmRpdi5wcm9qZWN0IHtcbiAgd2lkdGg6IDMwdnc7XG59XG5cbmRpdi50aXRsZSB7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjZmZmO1xuICBtYXJnaW46IDAgYXV0bztcbn1cblxuZGl2LnNraWxscyB7XG4gIGZvbnQtc2l6ZTogMS4ycmVtO1xufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChob3Zlcjogbm9uZSkgYW5kIChwb2ludGVyOiBjb2Fyc2UpIHtcbiAgZGl2LnByb2plY3Qge1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG1hcmdpbjogMCBhdXRvO1xuICB9XG59Il19 */"]
     });
     /*@__PURE__*/
 
@@ -2331,6 +2341,105 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   },
 
   /***/
+  "./src/assets/articles/article1.ts":
+  /*!*****************************************!*\
+    !*** ./src/assets/articles/article1.ts ***!
+    \*****************************************/
+
+  /*! exports provided: article1 */
+
+  /***/
+  function srcAssetsArticlesArticle1Ts(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "article1", function () {
+      return article1;
+    });
+
+    var article1 = {
+      id: 1,
+      title: "How to set up a WordPress site on an EC2 AWS instance with an SSL certificate",
+      sections: ["<h3>Step 1 – Get a domain name</h3><p> Access to you AWS management console and select the service Route53. </p> <p>Type in your domain and click ‘Check’. Once you found the right available domain proceed adding to chart.<br>Select the wanted option (at this point I opt for the version without www, which can be added later as an alias). The domain registration at this point will be in process.</p> <p> Once processed the request, you’ll be able to see your domain clicking on the option ‘Registered domains’ on the left-hand menu. We’ll come back here later to create the record sets.</p>", "<h3>Step 2 – Create the EC2 instance</h3><p>Select EC2 among the services in the console. Select ‘Instances’ in the left-hand menu and ‘Launch Instance’ in the top-right corner of the window.<br> Select Amazon MarketPlace from the options on the left and search for WordPress Certified by Bitnami and Automattic, once selected it will show you the pricing.<br> It is possible to select an instance type free-tier eligible.<br> At this point click ‘Review and Launch’. It will prompt you for defining a key value pair, which we will need to SSH into our instance.<br> You can pick up one already existing (make sure you downloaded it when you created it) or you can create and download a new one.<br>  After you downloaded the .pem file proceed clicking launch instance.<br> Selecting the instance you can see now the public DNS of it, we will need it to SSH into it. </p>", "<h3>Step 3 – Request an SSL certificate from AWS </h3> <p> Select ‘Certificate Manager’ in the AWS console.<br> Click ‘Request a certificate’. Go on with the default options.<br> Add the domain name(s) for which your are requesting it. <br> At this point you’ll probably want to add the 2 version of your domain (with and without ‘www’).<br> Select ‘Next’ and choose the type of validation.<br> I go with the email validation, because it’s quicker, but in case you are not the admin of the account you’ll have to go with the DNS validation.<br> Click ‘Review’ and confirm the request. Select ‘Continue’.<br> If you chose to validate through email you’ll receive an email for every domain you picked, click on the link in the email and click ‘I approve’.<br> </p>", "<h3>Step 4 – Create a load balancer and target group with associated certificate</h3> <p>   After the certificate is approved we can proceed creating the load balancer . Log into the EC2 dashboard.<br> Select Load Balancer from the left-hand menu. </p> <p>  Click ‘Create load balancer’ and select ‘Application load balancer’. Write a name for it.<br> Add a listener with protocol HTTPS. </p> <p> Select at least 2 availability zones. Proceed clicking ‘Configure security settings’.<br> Select your certificate from the dropdown list and leave the default options for the rest. Click ‘Configure Security Groups’.<br> Select the option ‘Create a new security group’.  You’ll need to add 2 rules with the following option selected:<br> Type : HTTP<br> Source: Anywhere<br>  Type : HTTPS<br> Source: Anywhere<br> </p> <p> Click ‘Configure routing’. Give a name to the target group and click ‘Register target’.<br> In the next window, select your instance at the bottom and click ‘Add to registered’. Click ‘Review’ and then ‘Create’.<br> UPDATE: In order to redirect http to https, once your load balancer is active select it in the panel and select the tab ‘Listeners’.<br> Select “View/edit rules”. Click ‘Edit rules’, eliminate the default action and add the action ‘Redirect to..’, select ‘HTTPS’ on port 443 and update the rule.<br> </p> <h3>Step 5 –  Create the alias records</h3> <p> Let’s go back to Route 53. Select your hosted zone and click ‘Add record set’. </p> <p> One record will be without ‘www’, type A-iPv4. Check the option alias and select your load balancer from the dropdown list.  Repeat the same procedure for the domain with ‘www’. </p>", "<h3>Step6–SSHintotheinstance</h3><p>Atthispointyouinstanceisupandrunningwiththedomainnameyouchose.<br>Howevertomakethecertificateeffectivewe’llneedtomodifytheconfigfileofourinstance.<br>Todosowewillneedthe.pemfiledownloadedbefore.<br>Thefollowingprocedureworksonlinuxandmac.<br>Openaterminal.<br>Typethistochangethefilepermissionsofthe.pemfile<br>chmod600/path-to-your-key.pem<br>Thentypethistosshintotheinstance,usingtheDNSaddressyousawontheEC2panel:<br></p><code>sshbitnami@ec2-17-08-02-19.compute-1.amazonaws.com-i/path-to-your-key.pem</code><p>Typein‘yes’ifitasksyouifyouaresureyouwanttoconnect.<br>Nowwecanseeourapplicationcredentials.<br>Typeincat./bitnami_credentials.Youwillseesomethinglike:<br>Thedefaultusernameandpasswordis'user'and'YUrahstyU'.<br>Thesearethecredentialstoaccessyourwordpressdahsboard.<br>Typein:</p><code>vim/opt/bitnami/apps/wordpress/htdocs/wp-config.php</code><p>Lookfortheselines:</p><code>define('WP_SITEURL','http://'.$_SERVER['HTTP_HOST'].'/');<br>define('WP_HOME','http://'.$_SERVER['HTTP_HOST'].'/');<br></code><p>Modifytheminthisway:</p><code>define('WP_SITEURL','https://'.$_SERVER['HTTP_HOST'].'/');<br>define('WP_HOME','https://'.$_SERVER['HTTP_HOST'].'/');<br></code><p>Beforethese2linesaddthis:</p><code>if(strpos($_SERVER['HTTP_X_FORWARDED_PROTO'],'https')!==false)<br>$_SERVER['HTTPS']='on';</code><p>Saveandclose.<br>Thenlet’smodifytheserverconfigurations.Typein:</p><code>vim/opt/bitnami/apps/wordpress/conf/httpd-prefix.conf.</code><p>Addthislineatthetop:</p><code>SetEnvIfx-forwarded-protohttpsHTTPS=on</code><p>Saveandclose<br>Restarttheserver.<br></p><code>sudo/opt/bitnami/ctlscript.shrestartapache</code><p>Atthispointthecertificatewillbeeffective,butyou’llneedtowaittoseethechangesandifnecessarycleanthecacheofyourbrowser.</p><p>Update:<br>Insomecasestheremightbetheneedtomanuallychangethe‘siteurl’and‘home’valuesofourdomaintothehttpsversion.<br>Inordertodoso,connectviaSSHtoyourinstance.Beforeconnectingtothedatabaseyoucangetyourdefaultpasswordinthewp-config.phpfile.<br>Typetoaccesstoyourdatabase:</p><code>sudomysql-ubn_wordpress-p-e'USEbitnami_wordpress;selectoption_name,option_valuefromwp_optionsWHEREoption_name='siteurl'ORoption_name='home';'</code><p>ItwillaskyouforthepasswordanditwillshowyouyourdomainURL.<br>Iftheurlisnothttpsyoucanchangeitthisway:</p><code>sudomysql-ubn_wordpress-p-e'USEbitnami_wordpress;UPDATEwp_optionsSEToption_value='https://127.0.0.1/wordpress/'WHEREoption_name='home'ORoption_name='siteurl';'</code>"],
+      resources: ["https://docs.bitnami.com/aws/faq/get-started/find-credentials/#option-2-find-password-by-connecting-to-your-application-through-ssh<br>", "https://stackoverflow.com/questions/24603620/redirecting-ec2-elastic-load-balancer-from-http-to-https<br>", "https://stackoverflow.com/questions/46084104/ssl-cloudfront-ec2-wordpress-through-bitnami<br>", "http://coenraets.org/blog/2012/01/setting-up-wordpress-on-amazon-ec2-in-5-minutes/<br>", "https://community.bitnami.com/t/http-to-https-redirect-is-not-working/69595/9<br>", "https://stackoverflow.com/questions/26620670/apache-httpx-forwarded-proto-in-htaccess-is-causing-redirect-loop-in-dev-envir<br>"],
+      images: ["https://devdenise.s3.eu-west-3.amazonaws.com/articles/1/pending-domain-1200x487.jpg", "https://devdenise.s3.eu-west-3.amazonaws.com/articles/1/initializing-instance-1200x486.jpg", "https://devdenise.s3.eu-west-3.amazonaws.com/articles/1/ssl-pending.jpg"]
+    };
+    /***/
+  },
+
+  /***/
+  "./src/assets/articles/article_cards.ts":
+  /*!**********************************************!*\
+    !*** ./src/assets/articles/article_cards.ts ***!
+    \**********************************************/
+
+  /*! exports provided: article_cards */
+
+  /***/
+  function srcAssetsArticlesArticle_cardsTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "article_cards", function () {
+      return article_cards;
+    });
+
+    var article_cards = [{
+      id: 1,
+      title: "How to set up a WordPress site on an EC2 AWS instance with an SSL certificate"
+    }];
+    /***/
+  },
+
+  /***/
+  "./src/assets/projects/projects.ts":
+  /*!*****************************************!*\
+    !*** ./src/assets/projects/projects.ts ***!
+    \*****************************************/
+
+  /*! exports provided: projects */
+
+  /***/
+  function srcAssetsProjectsProjectsTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "projects", function () {
+      return projects;
+    });
+
+    var projects = [{
+      id: 1,
+      title: "Leader Clinique",
+      link: "https://leaderclinique.com/",
+      imageLink: "https://devdenise.s3.eu-west-3.amazonaws.com/leaderclinique.JPG",
+      description: "This static site is hosted on AWS S3 and the form is managed through a Google script. The technology used are HTML, CSS and Javascript."
+    }, {
+      id: 2,
+      title: "CovidStats",
+      link: "https://denisen90.github.io/covid-stats/",
+      imageLink: "https://devdenise.s3.eu-west-3.amazonaws.com/covid-stats.JPG",
+      description: "Angular application hosted on GitHub Pages, with a CD/CI pipleine integration."
+    }, {
+      id: 3,
+      title: "Pubbliufficio",
+      link: "https://pubbliufficio.com/",
+      imageLink: "https://devdenise.s3.eu-west-3.amazonaws.com/pubbliufficio.jpg",
+      description: "React application hosted on GitHub Pages, with a custom domain and a form managed by a Google script."
+    }];
+    /***/
+  },
+
+  /***/
   "./src/environments/environment.ts":
   /*!*****************************************!*\
     !*** ./src/environments/environment.ts ***!
@@ -2428,7 +2537,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /home/denise/Apps/devdenise-fe/src/main.ts */
+    /*! /Users/denisenanni/Documents/apps/devdenise-fe/src/main.ts */
     "./src/main.ts");
     /***/
   }
