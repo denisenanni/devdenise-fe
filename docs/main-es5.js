@@ -1,6 +1,6 @@
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -127,9 +127,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       component: _home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"]
     }];
 
-    var AppRoutingModule = function AppRoutingModule() {
+    var AppRoutingModule = /*#__PURE__*/_createClass(function AppRoutingModule() {
       _classCallCheck(this, AppRoutingModule);
-    };
+    });
 
     AppRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({
       type: AppRoutingModule
@@ -225,14 +225,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       };
     };
 
-    var AppComponent = function AppComponent(appService) {
+    var AppComponent = /*#__PURE__*/_createClass(function AppComponent(appService) {
       _classCallCheck(this, AppComponent);
 
       this.appService = appService;
       this.title = 'DevDenise';
       this.isMobile = appService.isMobile;
       this.backgroundImage = this.isMobile ? '../assets/bg.jpg' : '../assets/bg-desktop.jpg';
-    };
+    });
 
     AppComponent.ɵfac = function AppComponent_Factory(t) {
       return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_app_service__WEBPACK_IMPORTED_MODULE_2__["AppService"]));
@@ -438,25 +438,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_common_http__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
-    /*! @angular/common/http */
-    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
-    /* harmony import */
-
-
-    var _footer_footer_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    var _footer_footer_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! ./footer/footer.component */
     "./src/app/footer/footer.component.ts");
     /* harmony import */
 
 
-    var _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    var _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
     /*! ./project-card/project-card.component */
     "./src/app/project-card/project-card.component.ts");
 
-    var AppModule = function AppModule() {
+    var AppModule = /*#__PURE__*/_createClass(function AppModule() {
       _classCallCheck(this, AppModule);
-    };
+    });
 
     AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({
       type: AppModule,
@@ -469,13 +463,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       providers: [_app_service__WEBPACK_IMPORTED_MODULE_16__["AppService"]],
       imports: [[_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbThemeModule"].forRoot({
         name: 'default'
-      }), _nebular_eva_icons__WEBPACK_IMPORTED_MODULE_6__["NbEvaIconsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbActionsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbSidebarModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbCardModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbButtonModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbInputModule"], _angular_common__WEBPACK_IMPORTED_MODULE_11__["CommonModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_17__["HttpClientModule"]]]
+      }), _nebular_eva_icons__WEBPACK_IMPORTED_MODULE_6__["NbEvaIconsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbActionsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbSidebarModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbCardModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbButtonModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbInputModule"], _angular_common__WEBPACK_IMPORTED_MODULE_11__["CommonModule"]]]
     });
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _under_construction_under_construction_component__WEBPACK_IMPORTED_MODULE_8__["UnderConstructionComponent"], _article_card_article_card_component__WEBPACK_IMPORTED_MODULE_9__["ArticleCardComponent"], _article_article_component__WEBPACK_IMPORTED_MODULE_10__["ArticleComponent"], _menu_menu_component__WEBPACK_IMPORTED_MODULE_12__["MenuComponent"], _blog_blog_component__WEBPACK_IMPORTED_MODULE_13__["BlogComponent"], _directives_goback_directive__WEBPACK_IMPORTED_MODULE_14__["GobackDirective"], _projects_and_skills_projects_and_skills_component__WEBPACK_IMPORTED_MODULE_15__["ProjectsAndSkillsComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_18__["FooterComponent"], _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_19__["ProjectCardComponent"]],
-        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbThemeModule"], _nebular_eva_icons__WEBPACK_IMPORTED_MODULE_6__["NbEvaIconsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbActionsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbSidebarModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbCardModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbButtonModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbInputModule"], _angular_common__WEBPACK_IMPORTED_MODULE_11__["CommonModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_17__["HttpClientModule"]]
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _under_construction_under_construction_component__WEBPACK_IMPORTED_MODULE_8__["UnderConstructionComponent"], _article_card_article_card_component__WEBPACK_IMPORTED_MODULE_9__["ArticleCardComponent"], _article_article_component__WEBPACK_IMPORTED_MODULE_10__["ArticleComponent"], _menu_menu_component__WEBPACK_IMPORTED_MODULE_12__["MenuComponent"], _blog_blog_component__WEBPACK_IMPORTED_MODULE_13__["BlogComponent"], _directives_goback_directive__WEBPACK_IMPORTED_MODULE_14__["GobackDirective"], _projects_and_skills_projects_and_skills_component__WEBPACK_IMPORTED_MODULE_15__["ProjectsAndSkillsComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_17__["FooterComponent"], _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_18__["ProjectCardComponent"]],
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbThemeModule"], _nebular_eva_icons__WEBPACK_IMPORTED_MODULE_6__["NbEvaIconsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbActionsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbSidebarModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbCardModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbButtonModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbInputModule"], _angular_common__WEBPACK_IMPORTED_MODULE_11__["CommonModule"]]
       });
     })();
     /*@__PURE__*/
@@ -485,10 +479,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _under_construction_under_construction_component__WEBPACK_IMPORTED_MODULE_8__["UnderConstructionComponent"], _article_card_article_card_component__WEBPACK_IMPORTED_MODULE_9__["ArticleCardComponent"], _article_article_component__WEBPACK_IMPORTED_MODULE_10__["ArticleComponent"], _menu_menu_component__WEBPACK_IMPORTED_MODULE_12__["MenuComponent"], _blog_blog_component__WEBPACK_IMPORTED_MODULE_13__["BlogComponent"], _directives_goback_directive__WEBPACK_IMPORTED_MODULE_14__["GobackDirective"], _projects_and_skills_projects_and_skills_component__WEBPACK_IMPORTED_MODULE_15__["ProjectsAndSkillsComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_18__["FooterComponent"], _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_19__["ProjectCardComponent"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _under_construction_under_construction_component__WEBPACK_IMPORTED_MODULE_8__["UnderConstructionComponent"], _article_card_article_card_component__WEBPACK_IMPORTED_MODULE_9__["ArticleCardComponent"], _article_article_component__WEBPACK_IMPORTED_MODULE_10__["ArticleComponent"], _menu_menu_component__WEBPACK_IMPORTED_MODULE_12__["MenuComponent"], _blog_blog_component__WEBPACK_IMPORTED_MODULE_13__["BlogComponent"], _directives_goback_directive__WEBPACK_IMPORTED_MODULE_14__["GobackDirective"], _projects_and_skills_projects_and_skills_component__WEBPACK_IMPORTED_MODULE_15__["ProjectsAndSkillsComponent"], _footer_footer_component__WEBPACK_IMPORTED_MODULE_17__["FooterComponent"], _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_18__["ProjectCardComponent"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbThemeModule"].forRoot({
             name: 'default'
-          }), _nebular_eva_icons__WEBPACK_IMPORTED_MODULE_6__["NbEvaIconsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbActionsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbSidebarModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbCardModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbButtonModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbInputModule"], _angular_common__WEBPACK_IMPORTED_MODULE_11__["CommonModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_17__["HttpClientModule"]],
+          }), _nebular_eva_icons__WEBPACK_IMPORTED_MODULE_6__["NbEvaIconsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbActionsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbSidebarModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbCardModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbButtonModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbInputModule"], _angular_common__WEBPACK_IMPORTED_MODULE_11__["CommonModule"]],
           providers: [_app_service__WEBPACK_IMPORTED_MODULE_16__["AppService"]],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         }]
@@ -547,18 +541,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _assets_projects_projects__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ../assets/projects/projects */
     "./src/assets/projects/projects.ts");
-    /* harmony import */
-
-
-    var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-    /*! @angular/common/http */
-    "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
 
     var AppService = /*#__PURE__*/function () {
-      function AppService(http) {
+      function AppService() {
         _classCallCheck(this, AppService);
 
-        this.http = http;
         this.isMobile = this.isMobileDevice();
       }
 
@@ -588,7 +575,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }();
 
     AppService.ɵfac = function AppService_Factory(t) {
-      return new (t || AppService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClient"]));
+      return new (t || AppService)();
     };
 
     AppService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
@@ -605,9 +592,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           providedIn: 'root'
         }]
       }], function () {
-        return [{
-          type: _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClient"]
-        }];
+        return [];
       }, null);
     })();
     /***/
@@ -682,7 +667,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     ArticleCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: ArticleCardComponent,
-      selectors: [["article-card"]],
+      selectors: [["ArticleCardComponent"]],
       inputs: {
         articleCard: "articleCard"
       },
@@ -735,7 +720,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ArticleCardComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-          selector: 'article-card',
+          selector: 'ArticleCardComponent',
           templateUrl: './article-card.component.html',
           styleUrls: ['./article-card.component.scss']
         }]
@@ -1096,7 +1081,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 9);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "article-card", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ArticleCardComponent", 10);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }
@@ -1821,7 +1806,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     ProjectCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: ProjectCardComponent,
-      selectors: [["project-card"]],
+      selectors: [["ProjectCardComponent"]],
       inputs: {
         project: "project"
       },
@@ -1890,7 +1875,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ProjectCardComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-          selector: 'project-card',
+          selector: 'ProjectCardComponent',
           templateUrl: './project-card.component.html',
           styleUrls: ['./project-card.component.scss']
         }]
@@ -1964,7 +1949,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 10);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "project-card", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ProjectCardComponent", 11);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
       }

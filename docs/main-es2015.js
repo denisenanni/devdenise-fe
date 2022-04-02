@@ -181,10 +181,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _directives_goback_directive__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./directives/goback.directive */ "./src/app/directives/goback.directive.ts");
 /* harmony import */ var _projects_and_skills_projects_and_skills_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./projects-and-skills/projects-and-skills.component */ "./src/app/projects-and-skills/projects-and-skills.component.ts");
 /* harmony import */ var _app_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./app.service */ "./src/app/app.service.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
-/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
-/* harmony import */ var _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./project-card/project-card.component */ "./src/app/project-card/project-card.component.ts");
-
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
+/* harmony import */ var _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./project-card/project-card.component */ "./src/app/project-card/project-card.component.ts");
 
 
 
@@ -221,7 +219,6 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
             _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbButtonModule"],
             _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbInputModule"],
             _angular_common__WEBPACK_IMPORTED_MODULE_11__["CommonModule"],
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_17__["HttpClientModule"],
         ]] });
 (function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
         _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"],
@@ -232,8 +229,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _blog_blog_component__WEBPACK_IMPORTED_MODULE_13__["BlogComponent"],
         _directives_goback_directive__WEBPACK_IMPORTED_MODULE_14__["GobackDirective"],
         _projects_and_skills_projects_and_skills_component__WEBPACK_IMPORTED_MODULE_15__["ProjectsAndSkillsComponent"],
-        _footer_footer_component__WEBPACK_IMPORTED_MODULE_18__["FooterComponent"],
-        _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_19__["ProjectCardComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _footer_footer_component__WEBPACK_IMPORTED_MODULE_17__["FooterComponent"],
+        _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_18__["ProjectCardComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
         _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"],
         _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"], _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbThemeModule"], _nebular_eva_icons__WEBPACK_IMPORTED_MODULE_6__["NbEvaIconsModule"],
         _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbActionsModule"],
@@ -241,8 +238,7 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
         _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbCardModule"],
         _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbButtonModule"],
         _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbInputModule"],
-        _angular_common__WEBPACK_IMPORTED_MODULE_11__["CommonModule"],
-        _angular_common_http__WEBPACK_IMPORTED_MODULE_17__["HttpClientModule"]] }); })();
+        _angular_common__WEBPACK_IMPORTED_MODULE_11__["CommonModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
@@ -256,8 +252,8 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _blog_blog_component__WEBPACK_IMPORTED_MODULE_13__["BlogComponent"],
                     _directives_goback_directive__WEBPACK_IMPORTED_MODULE_14__["GobackDirective"],
                     _projects_and_skills_projects_and_skills_component__WEBPACK_IMPORTED_MODULE_15__["ProjectsAndSkillsComponent"],
-                    _footer_footer_component__WEBPACK_IMPORTED_MODULE_18__["FooterComponent"],
-                    _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_19__["ProjectCardComponent"],
+                    _footer_footer_component__WEBPACK_IMPORTED_MODULE_17__["FooterComponent"],
+                    _project_card_project_card_component__WEBPACK_IMPORTED_MODULE_18__["ProjectCardComponent"],
                 ],
                 imports: [
                     _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -271,7 +267,6 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
                     _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbButtonModule"],
                     _nebular_theme__WEBPACK_IMPORTED_MODULE_5__["NbInputModule"],
                     _angular_common__WEBPACK_IMPORTED_MODULE_11__["CommonModule"],
-                    _angular_common_http__WEBPACK_IMPORTED_MODULE_17__["HttpClientModule"],
                 ],
                 providers: [_app_service__WEBPACK_IMPORTED_MODULE_16__["AppService"]],
                 bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]],
@@ -296,8 +291,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_articles_article_cards__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/articles/article_cards */ "./src/assets/articles/article_cards.ts");
 /* harmony import */ var _assets_articles_article1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/articles/article1 */ "./src/assets/articles/article1.ts");
 /* harmony import */ var _assets_projects_projects__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/projects/projects */ "./src/assets/projects/projects.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
-
 
 
 
@@ -305,8 +298,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 class AppService {
-    constructor(http) {
-        this.http = http;
+    constructor() {
         this.isMobile = this.isMobileDevice();
     }
     isMobileDevice() {
@@ -322,14 +314,14 @@ class AppService {
         return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(_assets_projects_projects__WEBPACK_IMPORTED_MODULE_4__["projects"]);
     }
 }
-AppService.ɵfac = function AppService_Factory(t) { return new (t || AppService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClient"])); };
+AppService.ɵfac = function AppService_Factory(t) { return new (t || AppService)(); };
 AppService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: AppService, factory: AppService.ɵfac, providedIn: 'root' });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
                 providedIn: 'root',
             }]
-    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClient"] }]; }, null); })();
+    }], function () { return []; }, null); })();
 
 
 /***/ }),
@@ -365,7 +357,7 @@ class ArticleCardComponent {
     }
 }
 ArticleCardComponent.ɵfac = function ArticleCardComponent_Factory(t) { return new (t || ArticleCardComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_app_service__WEBPACK_IMPORTED_MODULE_1__["AppService"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"])); };
-ArticleCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ArticleCardComponent, selectors: [["article-card"]], inputs: { articleCard: "articleCard" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], decls: 7, vars: 1, consts: [[1, "card", "w-100", "text-center"], [1, "card-header"], [1, "card-title"], [1, "card-body"], [1, "card-link", 3, "click"]], template: function ArticleCardComponent_Template(rf, ctx) { if (rf & 1) {
+ArticleCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ArticleCardComponent, selectors: [["ArticleCardComponent"]], inputs: { articleCard: "articleCard" }, features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵNgOnChangesFeature"]], decls: 7, vars: 1, consts: [[1, "card", "w-100", "text-center"], [1, "card-header"], [1, "card-title"], [1, "card-body"], [1, "card-link", 3, "click"]], template: function ArticleCardComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h5", 2);
@@ -386,7 +378,7 @@ ArticleCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ArticleCardComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'article-card',
+                selector: 'ArticleCardComponent',
                 templateUrl: './article-card.component.html',
                 styleUrls: ['./article-card.component.scss'],
             }]
@@ -557,7 +549,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function BlogComponent_div_5_div_1_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 9);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "article-card", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ArticleCardComponent", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const articleCard_r4 = ctx.$implicit;
@@ -892,7 +884,7 @@ class ProjectCardComponent {
     }
 }
 ProjectCardComponent.ɵfac = function ProjectCardComponent_Factory(t) { return new (t || ProjectCardComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_app_service__WEBPACK_IMPORTED_MODULE_2__["AppService"])); };
-ProjectCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProjectCardComponent, selectors: [["project-card"]], inputs: { project: "project" }, decls: 11, vars: 7, consts: [[1, "card", "m-4", 3, "ngStyle"], [1, "layer", "text-center"], [1, "card-header"], [1, "card-title", "font-weight-bold"], [1, "card-body"], [1, "card-text"], [4, "ngIf", "ngIfElse"], ["desktop", ""], [3, "click"], [1, "footer", "w-100"], [1, "btn", "btn-outline-light", "btn-lg", 3, "click"]], template: function ProjectCardComponent_Template(rf, ctx) { if (rf & 1) {
+ProjectCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ProjectCardComponent, selectors: [["ProjectCardComponent"]], inputs: { project: "project" }, decls: 11, vars: 7, consts: [[1, "card", "m-4", 3, "ngStyle"], [1, "layer", "text-center"], [1, "card-header"], [1, "card-title", "font-weight-bold"], [1, "card-body"], [1, "card-text"], [4, "ngIf", "ngIfElse"], ["desktop", ""], [3, "click"], [1, "footer", "w-100"], [1, "btn", "btn-outline-light", "btn-lg", 3, "click"]], template: function ProjectCardComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -922,7 +914,7 @@ ProjectCardComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdef
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ProjectCardComponent, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
         args: [{
-                selector: 'project-card',
+                selector: 'ProjectCardComponent',
                 templateUrl: './project-card.component.html',
                 styleUrls: ['./project-card.component.scss'],
             }]
@@ -956,7 +948,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function ProjectsAndSkillsComponent_div_9_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 10);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "project-card", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "ProjectCardComponent", 11);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const p_r2 = ctx.$implicit;
