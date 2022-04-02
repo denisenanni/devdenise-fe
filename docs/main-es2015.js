@@ -143,14 +143,12 @@ AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
 /*!**********************************!*\
   !*** ./src/app/app.constants.ts ***!
   \**********************************/
-/*! exports provided: SERVER_API_URL, WIP */
+/*! exports provided: WIP */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SERVER_API_URL", function() { return SERVER_API_URL; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WIP", function() { return WIP; });
-const SERVER_API_URL = 'https://devdenise-be.herokuapp.com/';
 const WIP = "Work in progress";
 
 
@@ -294,13 +292,11 @@ AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppService", function() { return AppService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _app_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.constants */ "./src/app/app.constants.ts");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
-/* harmony import */ var _assets_articles_article_cards__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/articles/article_cards */ "./src/assets/articles/article_cards.ts");
-/* harmony import */ var _assets_articles_article1__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/articles/article1 */ "./src/assets/articles/article1.ts");
-/* harmony import */ var _assets_projects_projects__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../assets/projects/projects */ "./src/assets/projects/projects.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
-
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var _assets_articles_article_cards__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/articles/article_cards */ "./src/assets/articles/article_cards.ts");
+/* harmony import */ var _assets_articles_article1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../assets/articles/article1 */ "./src/assets/articles/article1.ts");
+/* harmony import */ var _assets_projects_projects__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../assets/projects/projects */ "./src/assets/projects/projects.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
 
 
 
@@ -311,30 +307,29 @@ __webpack_require__.r(__webpack_exports__);
 class AppService {
     constructor(http) {
         this.http = http;
-        this.resourceUrl = _app_constants__WEBPACK_IMPORTED_MODULE_1__["SERVER_API_URL"];
         this.isMobile = this.isMobileDevice();
     }
     isMobileDevice() {
         return /Mobile|Android|iP(hone|od)|IEMobile|BlackBerry|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(navigator.userAgent);
     }
     getArticlesCards() {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(_assets_articles_article_cards__WEBPACK_IMPORTED_MODULE_3__["article_cards"]);
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(_assets_articles_article_cards__WEBPACK_IMPORTED_MODULE_2__["article_cards"]);
     }
     getArticleById(id) {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(_assets_articles_article1__WEBPACK_IMPORTED_MODULE_4__["article1"]);
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(_assets_articles_article1__WEBPACK_IMPORTED_MODULE_3__["article1"]);
     }
     getProjects() {
-        return Object(rxjs__WEBPACK_IMPORTED_MODULE_2__["of"])(_assets_projects_projects__WEBPACK_IMPORTED_MODULE_5__["projects"]);
+        return Object(rxjs__WEBPACK_IMPORTED_MODULE_1__["of"])(_assets_projects_projects__WEBPACK_IMPORTED_MODULE_4__["projects"]);
     }
 }
-AppService.ɵfac = function AppService_Factory(t) { return new (t || AppService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClient"])); };
+AppService.ɵfac = function AppService_Factory(t) { return new (t || AppService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClient"])); };
 AppService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: AppService, factory: AppService.ɵfac, providedIn: 'root' });
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AppService, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
         args: [{
                 providedIn: 'root',
             }]
-    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClient"] }]; }, null); })();
+    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_5__["HttpClient"] }]; }, null); })();
 
 
 /***/ }),
@@ -426,20 +421,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function ArticleComponent_div_5_div_4_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 11);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 12);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const section_r5 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("innerHTML", section_r5.section, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeHtml"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"](" ", section_r5.imageLink, " ");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("src", section_r5.imageLink, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
 } }
 function ArticleComponent_div_5_div_6_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 12);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "div", 13);
 } if (rf & 2) {
     const resource_r6 = ctx.$implicit;
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("innerHTML", resource_r6.resource, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeHtml"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("innerHTML", resource_r6, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeHtml"]);
 } }
 function ArticleComponent_div_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 1);
@@ -447,7 +444,7 @@ function ArticleComponent_div_5_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h1", 7);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, ArticleComponent_div_5_div_4_Template, 2, 2, "div", 8);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, ArticleComponent_div_5_div_4_Template, 3, 2, "div", 8);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 9);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](6, ArticleComponent_div_5_div_6_Template, 1, 1, "div", 10);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -499,7 +496,7 @@ class ArticleComponent {
     }
 }
 ArticleComponent.ɵfac = function ArticleComponent_Factory(t) { return new (t || ArticleComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_app_service__WEBPACK_IMPORTED_MODULE_3__["AppService"])); };
-ArticleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ArticleComponent, selectors: [["app-article"]], decls: 12, vars: 2, consts: [[1, "container", "main", "hideSB"], [1, "row", "p-4"], [1, "col"], ["goback", ""], ["class", "row p-4", 4, "ngIf", "ngIfElse"], ["notFound", ""], [1, "row", "p-4", "text-center"], [1, "font-weight-bold", "text-center"], ["class", "content", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "resources"], ["class", "mt-3 mb-3", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "content", 3, "innerHTML"], [1, "mt-3", "mb-3", 3, "innerHTML"]], template: function ArticleComponent_Template(rf, ctx) { if (rf & 1) {
+ArticleComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ArticleComponent, selectors: [["app-article"]], decls: 12, vars: 2, consts: [[1, "container", "main", "hideSB"], [1, "row", "p-4"], [1, "col"], ["goback", ""], ["class", "row p-4", 4, "ngIf", "ngIfElse"], ["notFound", ""], [1, "row", "p-4", "text-center"], [1, "font-weight-bold", "text-center"], [4, "ngFor", "ngForOf"], [1, "resources"], ["class", "mt-3 mb-3 rrrr", 3, "innerHTML", 4, "ngFor", "ngForOf"], [1, "content", "imageLink", 3, "innerHTML"], [3, "src"], [1, "mt-3", "mb-3", "rrrr", 3, "innerHTML"]], template: function ArticleComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
@@ -1174,11 +1171,16 @@ const article1 = {
     id: 1,
     title: "How to set up a WordPress site on an EC2 AWS instance with an SSL certificate",
     sections: [
-        "<h3>Step 1 – Get a domain name</h3><p> Access to you AWS management console and select the service Route53. </p> <p>Type in your domain and click ‘Check’. Once you found the right available domain proceed adding to chart.<br>Select the wanted option (at this point I opt for the version without www, which can be added later as an alias). The domain registration at this point will be in process.</p> <p> Once processed the request, you’ll be able to see your domain clicking on the option ‘Registered domains’ on the left-hand menu. We’ll come back here later to create the record sets.</p>",
-        "<h3>Step 2 – Create the EC2 instance</h3><p>Select EC2 among the services in the console. Select ‘Instances’ in the left-hand menu and ‘Launch Instance’ in the top-right corner of the window.<br> Select Amazon MarketPlace from the options on the left and search for WordPress Certified by Bitnami and Automattic, once selected it will show you the pricing.<br> It is possible to select an instance type free-tier eligible.<br> At this point click ‘Review and Launch’. It will prompt you for defining a key value pair, which we will need to SSH into our instance.<br> You can pick up one already existing (make sure you downloaded it when you created it) or you can create and download a new one.<br>  After you downloaded the .pem file proceed clicking launch instance.<br> Selecting the instance you can see now the public DNS of it, we will need it to SSH into it. </p>",
-        "<h3>Step 3 – Request an SSL certificate from AWS </h3> <p> Select ‘Certificate Manager’ in the AWS console.<br> Click ‘Request a certificate’. Go on with the default options.<br> Add the domain name(s) for which your are requesting it. <br> At this point you’ll probably want to add the 2 version of your domain (with and without ‘www’).<br> Select ‘Next’ and choose the type of validation.<br> I go with the email validation, because it’s quicker, but in case you are not the admin of the account you’ll have to go with the DNS validation.<br> Click ‘Review’ and confirm the request. Select ‘Continue’.<br> If you chose to validate through email you’ll receive an email for every domain you picked, click on the link in the email and click ‘I approve’.<br> </p>",
-        "<h3>Step 4 – Create a load balancer and target group with associated certificate</h3> <p>   After the certificate is approved we can proceed creating the load balancer . Log into the EC2 dashboard.<br> Select Load Balancer from the left-hand menu. </p> <p>  Click ‘Create load balancer’ and select ‘Application load balancer’. Write a name for it.<br> Add a listener with protocol HTTPS. </p> <p> Select at least 2 availability zones. Proceed clicking ‘Configure security settings’.<br> Select your certificate from the dropdown list and leave the default options for the rest. Click ‘Configure Security Groups’.<br> Select the option ‘Create a new security group’.  You’ll need to add 2 rules with the following option selected:<br> Type : HTTP<br> Source: Anywhere<br>  Type : HTTPS<br> Source: Anywhere<br> </p> <p> Click ‘Configure routing’. Give a name to the target group and click ‘Register target’.<br> In the next window, select your instance at the bottom and click ‘Add to registered’. Click ‘Review’ and then ‘Create’.<br> UPDATE: In order to redirect http to https, once your load balancer is active select it in the panel and select the tab ‘Listeners’.<br> Select “View/edit rules”. Click ‘Edit rules’, eliminate the default action and add the action ‘Redirect to..’, select ‘HTTPS’ on port 443 and update the rule.<br> </p> <h3>Step 5 –  Create the alias records</h3> <p> Let’s go back to Route 53. Select your hosted zone and click ‘Add record set’. </p> <p> One record will be without ‘www’, type A-iPv4. Check the option alias and select your load balancer from the dropdown list.  Repeat the same procedure for the domain with ‘www’. </p>",
-        "<h3>Step6–SSHintotheinstance</h3><p>Atthispointyouinstanceisupandrunningwiththedomainnameyouchose.<br>Howevertomakethecertificateeffectivewe’llneedtomodifytheconfigfileofourinstance.<br>Todosowewillneedthe.pemfiledownloadedbefore.<br>Thefollowingprocedureworksonlinuxandmac.<br>Openaterminal.<br>Typethistochangethefilepermissionsofthe.pemfile<br>chmod600/path-to-your-key.pem<br>Thentypethistosshintotheinstance,usingtheDNSaddressyousawontheEC2panel:<br></p><code>sshbitnami@ec2-17-08-02-19.compute-1.amazonaws.com-i/path-to-your-key.pem</code><p>Typein‘yes’ifitasksyouifyouaresureyouwanttoconnect.<br>Nowwecanseeourapplicationcredentials.<br>Typeincat./bitnami_credentials.Youwillseesomethinglike:<br>Thedefaultusernameandpasswordis'user'and'YUrahstyU'.<br>Thesearethecredentialstoaccessyourwordpressdahsboard.<br>Typein:</p><code>vim/opt/bitnami/apps/wordpress/htdocs/wp-config.php</code><p>Lookfortheselines:</p><code>define('WP_SITEURL','http://'.$_SERVER['HTTP_HOST'].'/');<br>define('WP_HOME','http://'.$_SERVER['HTTP_HOST'].'/');<br></code><p>Modifytheminthisway:</p><code>define('WP_SITEURL','https://'.$_SERVER['HTTP_HOST'].'/');<br>define('WP_HOME','https://'.$_SERVER['HTTP_HOST'].'/');<br></code><p>Beforethese2linesaddthis:</p><code>if(strpos($_SERVER['HTTP_X_FORWARDED_PROTO'],'https')!==false)<br>$_SERVER['HTTPS']='on';</code><p>Saveandclose.<br>Thenlet’smodifytheserverconfigurations.Typein:</p><code>vim/opt/bitnami/apps/wordpress/conf/httpd-prefix.conf.</code><p>Addthislineatthetop:</p><code>SetEnvIfx-forwarded-protohttpsHTTPS=on</code><p>Saveandclose<br>Restarttheserver.<br></p><code>sudo/opt/bitnami/ctlscript.shrestartapache</code><p>Atthispointthecertificatewillbeeffective,butyou’llneedtowaittoseethechangesandifnecessarycleanthecacheofyourbrowser.</p><p>Update:<br>Insomecasestheremightbetheneedtomanuallychangethe‘siteurl’and‘home’valuesofourdomaintothehttpsversion.<br>Inordertodoso,connectviaSSHtoyourinstance.Beforeconnectingtothedatabaseyoucangetyourdefaultpasswordinthewp-config.phpfile.<br>Typetoaccesstoyourdatabase:</p><code>sudomysql-ubn_wordpress-p-e'USEbitnami_wordpress;selectoption_name,option_valuefromwp_optionsWHEREoption_name='siteurl'ORoption_name='home';'</code><p>ItwillaskyouforthepasswordanditwillshowyouyourdomainURL.<br>Iftheurlisnothttpsyoucanchangeitthisway:</p><code>sudomysql-ubn_wordpress-p-e'USEbitnami_wordpress;UPDATEwp_optionsSEToption_value='https://127.0.0.1/wordpress/'WHEREoption_name='home'ORoption_name='siteurl';'</code>"
+        { section: "<h3>Step 1 – Get a domain name</h3><p> Access to you AWS management console and select the service Route53. </p> <p>Type in your domain and click ‘Check’. Once you found the right available domain proceed adding to chart.<br>Select the wanted option (at this point I opt for the version without www, which can be added later as an alias). The domain registration at this point will be in process.</p> <p> Once processed the request, you’ll be able to see your domain clicking on the option ‘Registered domains’ on the left-hand menu. We’ll come back here later to create the record sets.</p>",
+            imageLink: "https://devdenise.s3.eu-west-3.amazonaws.com/articles/1/pending-domain-1200x487.jpg" },
+        { section: "<h3>Step 2 – Create the EC2 instance</h3><p>Select EC2 among the services in the console. Select ‘Instances’ in the left-hand menu and ‘Launch Instance’ in the top-right corner of the window.<br> Select Amazon MarketPlace from the options on the left and search for WordPress Certified by Bitnami and Automattic, once selected it will show you the pricing.<br> It is possible to select an instance type free-tier eligible.<br> At this point click ‘Review and Launch’. It will prompt you for defining a key value pair, which we will need to SSH into our instance.<br> You can pick up one already existing (make sure you downloaded it when you created it) or you can create and download a new one.<br>  After you downloaded the .pem file proceed clicking launch instance.<br> Selecting the instance you can see now the public DNS of it, we will need it to SSH into it. </p>",
+            imageLink: "https://devdenise.s3.eu-west-3.amazonaws.com/articles/1/initializing-instance-1200x486.jpg" },
+        { section: "<h3>Step 3 – Request an SSL certificate from AWS </h3> <p> Select ‘Certificate Manager’ in the AWS console.<br> Click ‘Request a certificate’. Go on with the default options.<br> Add the domain name(s) for which your are requesting it. <br> At this point you’ll probably want to add the 2 version of your domain (with and without ‘www’).<br> Select ‘Next’ and choose the type of validation.<br> I go with the email validation, because it’s quicker, but in case you are not the admin of the account you’ll have to go with the DNS validation.<br> Click ‘Review’ and confirm the request. Select ‘Continue’.<br> If you chose to validate through email you’ll receive an email for every domain you picked, click on the link in the email and click ‘I approve’.<br> </p>",
+            imageLink: "https://devdenise.s3.eu-west-3.amazonaws.com/articles/1/ssl-pending.jpg" },
+        { section: "<h3>Step 4 – Create a load balancer and target group with associated certificate</h3> <p>   After the certificate is approved we can proceed creating the load balancer . Log into the EC2 dashboard.<br> Select Load Balancer from the left-hand menu. </p> <p>  Click ‘Create load balancer’ and select ‘Application load balancer’. Write a name for it.<br> Add a listener with protocol HTTPS. </p> <p> Select at least 2 availability zones. Proceed clicking ‘Configure security settings’.<br> Select your certificate from the dropdown list and leave the default options for the rest. Click ‘Configure Security Groups’.<br> Select the option ‘Create a new security group’.  You’ll need to add 2 rules with the following option selected:<br> Type : HTTP<br> Source: Anywhere<br>  Type : HTTPS<br> Source: Anywhere<br> </p> <p> Click ‘Configure routing’. Give a name to the target group and click ‘Register target’.<br> In the next window, select your instance at the bottom and click ‘Add to registered’. Click ‘Review’ and then ‘Create’.<br> UPDATE: In order to redirect http to https, once your load balancer is active select it in the panel and select the tab ‘Listeners’.<br> Select “View/edit rules”. Click ‘Edit rules’, eliminate the default action and add the action ‘Redirect to..’, select ‘HTTPS’ on port 443 and update the rule.<br> </p> <h3>Step 5 –  Create the alias records</h3> <p> Let’s go back to Route 53. Select your hosted zone and click ‘Add record set’. </p> <p> One record will be without ‘www’, type A-iPv4. Check the option alias and select your load balancer from the dropdown list.  Repeat the same procedure for the domain with ‘www’. </p>",
+            imageLink: "https://devdenise.s3.eu-west-3.amazonaws.com/articles/1/load-balancer-select.jpg" },
+        { section: "<h3>Step6–SSHintotheinstance</h3><p>At this point your instance is up and running with the domain name you chose.<br>However to make the certificate effective we’ll need to modify the config file ofour instance.<br>To do so we will need the .pem file downloaded before.<br>The following procedure works on linux and mac.<br>Openaterminal.<br>Typethistochangethefilepermissionsofthe.pemfile<br>chmod600/path-to-your-key.pem<br>Thentypethistosshintotheinstance,usingtheDNSaddressyousawontheEC2panel:<br></p><code>sshbitnami@ec2-17-08-02-19.compute-1.amazonaws.com-i/path-to-your-key.pem</code><p>Typein‘yes’ifitasksyouifyouaresureyouwanttoconnect.<br>Nowwecanseeourapplicationcredentials.<br>Typeincat./bitnami_credentials.Youwillseesomethinglike:<br>Thedefaultusernameandpasswordis'user'and'YUrahstyU'.<br>Thesearethecredentialstoaccessyourwordpressdahsboard.<br>Typein:</p><code>vim/opt/bitnami/apps/wordpress/htdocs/wp-config.php</code><p>Lookfortheselines:</p><code>define('WP_SITEURL','http://'.$_SERVER['HTTP_HOST'].'/');<br>define('WP_HOME','http://'.$_SERVER['HTTP_HOST'].'/');<br></code><p>Modifytheminthisway:</p><code>define('WP_SITEURL','https://'.$_SERVER['HTTP_HOST'].'/');<br>define('WP_HOME','https://'.$_SERVER['HTTP_HOST'].'/');<br></code><p>Beforethese2linesaddthis:</p><code>if(strpos($_SERVER['HTTP_X_FORWARDED_PROTO'],'https')!==false)<br>$_SERVER['HTTPS']='on';</code><p>Saveandclose.<br>Thenlet’smodifytheserverconfigurations.Typein:</p><code>vim/opt/bitnami/apps/wordpress/conf/httpd-prefix.conf.</code><p>Addthislineatthetop:</p><code>SetEnvIfx-forwarded-protohttpsHTTPS=on</code><p>Saveandclose<br>Restarttheserver.<br></p><code>sudo/opt/bitnami/ctlscript.shrestartapache</code><p>Atthispointthecertificatewillbeeffective,butyou’llneedtowaittoseethechangesandifnecessarycleanthecacheofyourbrowser.</p><p>Update:<br>Insomecasestheremightbetheneedtomanuallychangethe‘siteurl’and‘home’valuesofourdomaintothehttpsversion.<br>Inordertodoso,connectviaSSHtoyourinstance.Beforeconnectingtothedatabaseyoucangetyourdefaultpasswordinthewp-config.phpfile.<br>Typetoaccesstoyourdatabase:</p><code>sudomysql-ubn_wordpress-p-e'USEbitnami_wordpress;selectoption_name,option_valuefromwp_optionsWHEREoption_name='siteurl'ORoption_name='home';'</code><p>ItwillaskyouforthepasswordanditwillshowyouyourdomainURL.<br>Iftheurlisnothttpsyoucanchangeitthisway:</p><code>sudomysql-ubn_wordpress-p-e'USEbitnami_wordpress;UPDATEwp_optionsSEToption_value='https://127.0.0.1/wordpress/'WHEREoption_name='home'ORoption_name='siteurl';'</code>",
+            imageLink: "https://devdenise.s3.eu-west-3.amazonaws.com/articles/1/initializing-instance-1200x486.jpg" }
     ],
     resources: [
         "https://docs.bitnami.com/aws/faq/get-started/find-credentials/#option-2-find-password-by-connecting-to-your-application-through-ssh<br>",
