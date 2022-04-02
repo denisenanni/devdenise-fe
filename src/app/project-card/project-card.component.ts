@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { AppService } from '../app.service';
 
 @Component({
-  selector: 'project-card',
+  selector: 'ProjectCardComponent',
   templateUrl: './project-card.component.html',
   styleUrls: ['./project-card.component.scss'],
 })

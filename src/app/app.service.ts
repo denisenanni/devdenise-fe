@@ -1,21 +1,16 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Project } from './model/project';
 import { of } from 'rxjs';
 import {article_cards} from '../assets/articles/article_cards'
 import { article1 } from '../assets/articles/article1'
 import { projects } from '../assets/projects/projects'
-
-type EntityResponseTypeProject = HttpResponse<Project[]>;
-
 @Injectable({
   providedIn: 'root',
 })
 export class AppService {
   isMobile: boolean;
 
-  constructor(protected http: HttpClient) {
+  constructor() {
     this.isMobile = this.isMobileDevice();
   }
 

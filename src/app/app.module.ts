@@ -22,7 +22,6 @@ import { BlogComponent } from './blog/blog.component';
 import { GobackDirective } from './directives/goback.directive';
 import { ProjectsAndSkillsComponent } from './projects-and-skills/projects-and-skills.component';
 import { AppService } from './app.service';
-import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 
@@ -52,7 +51,6 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     NbButtonModule,
     NbInputModule,
     CommonModule,
-    HttpClientModule,
   ],
   providers: [AppService],
   bootstrap: [AppComponent],

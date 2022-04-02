@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component,  ViewEncapsulation } from '@angular/core';
 import { AppService } from './app.service';
 import { slideInAnimation } from './route-animation';
 

@@ -4,7 +4,7 @@ import { ArticleCard } from '../model/article';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'article-card',
+  selector: 'ArticleCardComponent',
   templateUrl: './article-card.component.html',
   styleUrls: ['./article-card.component.scss'],
 })
