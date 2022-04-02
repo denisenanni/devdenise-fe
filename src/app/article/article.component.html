@@ -7,19 +7,30 @@
   <div class="row p-4" *ngIf="article; else notFound">
     <div class="col">
       <h1 class="font-weight-bold text-center">{{ article.title }}</h1>
-      <div
-        class="content"
-        *ngFor="let section of article.sections"
+
+      <div  *ngFor="let section of article.sections">
+        <div
+        class="content imageLink"
+       
         [innerHTML]="section.section"
       >
-        {{ section.imageLink }}
       </div>
+      <img src="{{section.imageLink}}"/> 
+
+      </div> 
+
+      
+
+      
+
+     
       <div class="resources">
         <div
-          class="mt-3 mb-3"
+          class="mt-3 mb-3 rrrr"
           *ngFor="let resource of article.resources"
-          [innerHTML]="resource.resource"
-        ></div>
+          [innerHTML]="resource"
+        >
+      </div>
       </div>
     </div>
   </div>

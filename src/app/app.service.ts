@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpResponse } from '@angular/common/http';
-import { SERVER_API_URL } from './app.constants';
 import { Observable } from 'rxjs';
 import { Project } from './model/project';
 import { of } from 'rxjs';
@@ -16,7 +15,6 @@ type EntityResponseTypeProject = HttpResponse<Project[]>;
 export class AppService {
   isMobile: boolean;
 
-  public resourceUrl = SERVER_API_URL;
   constructor(protected http: HttpClient) {
     this.isMobile = this.isMobileDevice();
   }
