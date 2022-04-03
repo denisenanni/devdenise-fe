@@ -2416,7 +2416,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }, {
       id: 2,
       title: "CovidStats",
-      link: "https://denisen90.github.io/covid-stats/",
+      link: "https://denisenanni.github.io/covid-stats/",
       imageLink: "https://devdenise.s3.eu-west-3.amazonaws.com/covid-stats.JPG",
       description: "Angular application hosted on GitHub Pages, with a CD/CI pipleine integration."
     }, {
