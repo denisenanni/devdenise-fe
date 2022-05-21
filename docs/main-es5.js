@@ -1990,7 +1990,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(ProjectsAndSkillsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          this.skills = ['Java 8', 'Spring Boot', 'Hibernate/JPA', 'SQL', 'MySQL/Postgres', 'Angular 7+', 'HTML/CSS/Bootstrap', 'AWS S3', 'AWS EC2', 'AWS Route53', 'Git', 'React', 'Vim'];
+          this.skills = ['Java 8', 'Spring Boot', 'Hibernate/JPA', 'MySQL/Postgres', 'Angular 7+', 'React', 'HTML/CSS/Bootstrap', 'AWS S3', 'AWS EC2', 'AWS Route53', 'Git', 'Vim'];
         }
       }, {
         key: "getProjects",
