@@ -38,7 +38,7 @@ export class ArticleComponent implements OnInit {
   private getArticle() {
     this.appService.getArticleById(this.idArticle).subscribe(
       (resp) => {
-        this.article = resp.body;
+        this.article = resp;
         this.success = 'OK';
         this.error = null;
       },

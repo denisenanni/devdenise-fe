@@ -490,8 +490,8 @@ module.exports = exported;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/denise/Apps/devdenise-fe/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
-module.exports = __webpack_require__(/*! /home/denise/Apps/devdenise-fe/src/styles.scss */"./src/styles.scss");
+__webpack_require__(/*! /Users/denisenanni/Documents/apps/devdenise-fe/node_modules/bootstrap/dist/css/bootstrap.min.css */"./node_modules/bootstrap/dist/css/bootstrap.min.css");
+module.exports = __webpack_require__(/*! /Users/denisenanni/Documents/apps/devdenise-fe/src/styles.scss */"./src/styles.scss");
 
 
 /***/ })

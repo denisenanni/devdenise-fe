@@ -26,12 +26,12 @@ export class ProjectsAndSkillsComponent implements OnInit {
 
   private getProjects() {
     this.appService.getProjects().subscribe(
-      (r: HttpResponse<Project[]>) => {
-        this.projects = r.body;
+      (r ) => {
+        this.projects = r;
         this.success = 'OK';
         this.error = null;
       },
-      (r: HttpErrorResponse) => {
+      (r ) => {
         this.error = r.error;
         this.success = null;
       }
