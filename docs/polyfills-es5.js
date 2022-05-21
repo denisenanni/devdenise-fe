@@ -8,7 +8,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["polyfills-es5"], {
   /***/
@@ -18891,7 +18891,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   /***/
   function _(module, exports, __webpack_require__) {
     __webpack_require__(
-    /*! /Users/denisenanni/Documents/apps/devdenise-fe/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js */
+    /*! /home/denise/Apps/devdenise-fe/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js */
     "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js");
 
     __webpack_require__(
@@ -18899,7 +18899,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     "./node_modules/zone.js/dist/zone-legacy.js");
 
     module.exports = __webpack_require__(
-    /*! /Users/denisenanni/Documents/apps/devdenise-fe/src/polyfills.ts */
+    /*! /home/denise/Apps/devdenise-fe/src/polyfills.ts */
     "./src/polyfills.ts");
     /***/
   }
