@@ -21,7 +21,7 @@ export class ProjectsAndSkillsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.skills = ['Java 8', 'Spring Boot', 'Hibernate/JPA', 'SQL', 'MySQL/Postgres', 'Angular 7+', 'HTML/CSS/Bootstrap', 'AWS S3', 'AWS EC2', 'AWS Route53', 'Git', 'React', 'Vim'];
+    this.skills = ['Java 8', 'Spring Boot', 'Hibernate/JPA', 'MySQL/Postgres', 'Angular 7+', 'React', 'HTML/CSS/Bootstrap', 'AWS S3', 'AWS EC2', 'AWS Route53', 'Git', 'Vim'];
   }
 
   private getProjects() {
