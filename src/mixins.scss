@@ -1,0 +1,6 @@
+@mixin random-background-size {
+  $repeat: 10;
+  @for $i from 1 through $repeat {
+    background-size: random(100)+px random(100) + px;
+  }
+}

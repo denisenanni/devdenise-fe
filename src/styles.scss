@@ -1,4 +1,12 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "./mixins.scss";
+@import "../node_modules/animate.css/animate.min";
+@import "../node_modules/hamburgers/dist/hamburgers.min";
+
+
+
+
+
 
 @font-face {
   font-family: Halva;
@@ -21,6 +29,7 @@
       min-height: 110vh;
       background-size: 100% 100%;
       background-position: top center;
+      display: flex;
       h1,
       h2,
       h3,
@@ -64,6 +73,7 @@
       h1 {
         font-size: 3rem;
       }
+
     }
   }
 }

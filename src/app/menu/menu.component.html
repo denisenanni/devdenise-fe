@@ -1,4 +1,16 @@
-<ul class="menu">
+<button 
+    class="hamburger hamburger--vortex" 
+    [ngClass]="{'is-active': this.isToggled}"
+    type="button" 
+    (click)="this.isToggled = !this.isToggled">
+    <span class="hamburger-box ">
+      <span class="hamburger-inner"></span>
+    </span>
+</button>  
+
+<ul 
+    class="menu icons animate__animated animate__bounceInLeft"
+    [ngClass]="{'d-none': !this.isToggled}">
     <li><a routerLink="/projects">PROJECTS AND SKILLS</a></li>
     <!--<li><a routerLink="/blog">BLOG</a></li>-->
 </ul>
