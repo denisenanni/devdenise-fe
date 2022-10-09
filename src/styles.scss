@@ -59,9 +59,11 @@
       button {
         padding: 0.5vh;
         margin: 1rem;
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: transparent;
+        border: none;
       }
       
+      button,
       code,
       a {
         color: #fff;

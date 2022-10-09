@@ -1,12 +1,10 @@
 div.img-container {
   text-align: center;
   img {
-    transition: height 0.9s;
-    transition-timing-function: ease-out;
       &.img-fluid {
       margin-left: 1.5rem;
-      max-width: 80%;
-    
+      max-width: 60%;
+      margin: 0 auto;  
     }
   }
 }
