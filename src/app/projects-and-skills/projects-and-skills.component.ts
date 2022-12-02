@@ -15,6 +15,7 @@ export class ProjectsAndSkillsComponent implements OnInit {
   projects: Project[];
 
   skills: string [];
+  showSkills = false;
 
   constructor(protected appService: AppService) {
     this.getProjects();

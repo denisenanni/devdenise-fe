@@ -5,17 +5,19 @@
     </div>
   </div>
   <div class="title row p-4 d-flex">
-    <h4>Projects</h4>
+    <div class="col">
+      <button (click)="this.showSkills = !this.showSkills"><h4>Projects</h4></button>
+    </div>
+    <div class="col">
+      <button (click)="this.showSkills = !this.showSkills"><h4>Skills</h4></button>
+    </div>
   </div>
-  <div class="row p-4 d-flex justify-content-center">
+  <div class="row p-4 d-flex justify-content-center" *ngIf="!showSkills">
     <div class="col col-lg-6 col-md-10 col-12 mb-4" *ngFor="let p of projects">
       <ProjectCardComponent [project]="p"></ProjectCardComponent>
     </div>
   </div>
-  <div class="title row p-4 d-flex mb-4">
-    <h4>Skills</h4>
-  </div>
-  <div class="container">
+  <div class="container mt-4" *ngIf="showSkills">
     <div *ngFor="let skill of skills">
       <div class="skills">
         <div>{{ skill }}</div>
