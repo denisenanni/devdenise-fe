@@ -16,13 +16,14 @@ export class ProjectsAndSkillsComponent implements OnInit {
 
   skills: string [];
   showSkills = false;
+  showProjects = true;
 
   constructor(protected appService: AppService) {
     this.getProjects();
   }
 
   ngOnInit(): void {
-    this.skills = ['Java 8', 'Spring Boot', 'Hibernate/JPA', 'MySQL/Postgres', 'Angular 7+', 'React', 'HTML/CSS/Bootstrap', 'AWS S3', 'AWS EC2', 'AWS Route53', 'Git', 'Vim'];
+    this.skills = ['React', 'HTML/CSS/Bootstrap', 'GCP', 'Terraform', 'Angular 7+', 'Java 8', 'Spring Boot', 'Hibernate/JPA', 'MySQL/Postgres', 'AWS S3', 'AWS EC2', 'AWS Route53', 'Git', 'Vim'];
   }
 
   private getProjects() {
@@ -37,5 +38,21 @@ export class ProjectsAndSkillsComponent implements OnInit {
         this.success = null;
       }
     );
+  }
+
+  toggleSkills(){
+    if(!this.showSkills) {
+      this.showSkills = true;
+      this.showProjects = false;
+    }
+  }
+
+  toggleProjects(){
+    console.log(this.showProjects)
+
+    if(!this.showProjects) {
+      this.showProjects = true;
+      this.showSkills = false;
+    }
   }
 }

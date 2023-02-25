@@ -5,11 +5,11 @@
     </div>
   </div>
   <div class="title row p-4 d-flex">
-    <div class="col">
-      <button (click)="this.showSkills = !this.showSkills"><h4>Projects</h4></button>
+    <div class="col text-center" >
+      <button [ngClass]="{'opaque' : this.showProjects}" (click)="toggleProjects()"><h4>Projects</h4></button>
     </div>
-    <div class="col">
-      <button (click)="this.showSkills = !this.showSkills"><h4>Skills</h4></button>
+    <div class="col text-center" [ngClass]="{'opaque' : this.showSkills}">
+      <button (click)="toggleSkills()"><h4>Skills</h4></button>
     </div>
   </div>
   <div class="row p-4 d-flex justify-content-center" *ngIf="!showSkills">
