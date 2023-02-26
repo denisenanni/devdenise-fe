@@ -50,8 +50,6 @@ export class ProjectsAndSkillsComponent implements OnInit {
   }
 
   toggleProjects(){
-    console.log(this.showProjects)
-
     if(!this.showProjects) {
       this.showProjects = true;
       this.showSkills = false;
