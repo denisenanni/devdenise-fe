@@ -27,5 +27,6 @@ jobs:
       - name: Push Build to Releases  
         uses: peaceiris/actions-gh-pages@v3
         with:  
-          artifacts: "dist/angular-githubaction/*"  
           github_token: ${{ secrets.GITHUB_TOKEN }}  
+          publish_dir: ./docs
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}  
