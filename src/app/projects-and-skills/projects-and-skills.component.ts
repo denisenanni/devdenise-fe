@@ -15,11 +15,13 @@ export class ProjectsAndSkillsComponent implements OnInit {
   projects: Project[];
 
   skills: string [];
+  isMobile: boolean;
   showSkills = false;
   showProjects = true;
 
   constructor(protected appService: AppService) {
     this.getProjects();
+    this.isMobile = this.appService.isMobile;
   }
 
   ngOnInit(): void {
