@@ -1,6 +1,5 @@
 <button 
-    class="hamburger hamburger--vortex" 
-    [ngClass]="{'is-active': this.isToggled}"
+    class="hamburger hamburger--vortex {{this.isToggled ? 'is.active' : ''}}" 
     type="button" 
     (click)="this.isToggled = !this.isToggled">
     <span class="hamburger-box ">
