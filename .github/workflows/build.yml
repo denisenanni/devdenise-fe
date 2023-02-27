@@ -22,15 +22,14 @@ jobs:
           node-version: ${{ matrix.node-version }}  
       - name: npm install and npm run build:ci  
         run: |  
-          ls /home/runner/work/devdenise-fe/devdenise-fe/docs
-      #     npm i  
-      #     npm run build:ci  
-      # - name: Push Build to Releases  
-      #   # run: |
-      #   #   pwd
-      #   #   ls /home/runner/work/devdenise-fe/devdenise-fe/
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with: 
-      #     publish_dir: ./docs 
-      #    # deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}  
-      #     personal_token: ${{ secrets.GITHUB_TOKEN }}
+          npm i  
+          npm run build:ci  
+      - name: Push Build to Releases  
+        # run: |
+        #   pwd
+        #   ls /home/runner/work/devdenise-fe/devdenise-fe/
+        uses: peaceiris/actions-gh-pages@v3
+        with: 
+          publish_dir: ./docs 
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}  
+          #personal_token: ${{ secrets.GITHUB_TOKEN }}
