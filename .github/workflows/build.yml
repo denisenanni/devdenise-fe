@@ -25,9 +25,8 @@ jobs:
           npm i  
           npm run build:ci  
       - name: Push Build to Releases  
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: peaceiris/actions-gh-pages@v3
         with: 
-          folder: docs 
-          branch: master  
-          ssh_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}  
-          #personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs 
+          #ssh_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}  
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
