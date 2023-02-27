@@ -22,8 +22,6 @@ jobs:
           node-version: ${{ matrix.node-version }}  
       - name: npm install and npm run build:ci  
         run: |  
-          pwd
-          ls /home/runner/work/devdenise-fe/devdenise-fe/
           ls /home/runner/work/devdenise-fe/devdenise-fe/docs
       #     npm i  
       #     npm run build:ci  
