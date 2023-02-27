@@ -10,14 +10,14 @@ jobs:
       - uses: actions/checkout@v1  
   
       - name: Cache node modules  
-        uses: actions/cache@v1  
+        uses: actions/cache@v3
         with:  
           path: ~/.npm  
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}  
           restore-keys: |  
             ${{ runner.os }}-node-  
       - name: Node ${{ matrix.node-version }}  
-        uses: actions/setup-node@v1  
+        uses: actions/setup-node@v3
         with:  
           node-version: ${{ matrix.node-version }}  
       - name: npm install and npm run build:ci  
@@ -25,6 +25,9 @@ jobs:
           npm i  
           npm run build:ci  
       - name: Push Build to Releases  
+        run: |
+          pwd
+          ls /home/runner/work/devdenise-fe/
         uses: peaceiris/actions-gh-pages@v3
         with: 
           publish_dir: ./docs 
