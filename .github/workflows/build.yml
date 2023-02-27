@@ -29,7 +29,7 @@ jobs:
           pwd
           ls /home/runner/work/devdenise-fe/
         #uses: peaceiris/actions-gh-pages@v3
-        with: 
-          publish_dir: ./docs 
+        #with: 
+        #  publish_dir: ./docs 
           #ssh_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}  
-          personal_token: ${{ secrets.GITHUB_TOKEN }}
+        #  personal_token: ${{ secrets.GITHUB_TOKEN }}
