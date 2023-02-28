@@ -28,6 +28,13 @@ div.skills {
   opacity: 0.5;
 }
 
+button.hover-item {
+  &:hover {
+    opacity: 1;
+    transition: 1s;
+  }
+}
+
 .unselected {
   width: 52%;
   margin: 0 auto;
