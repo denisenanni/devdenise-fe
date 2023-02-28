@@ -31,8 +31,7 @@ jobs:
         #   ls /home/runner/work/devdenise-fe/devdenise-fe/docs/.*
         uses: peaceiris/actions-gh-pages@v3
         with: 
-          publish_dir: ./docs 
+          publish_dir: ./
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}  
-          destination_dir: ./docs
           #personal_token: ${{ secrets.GITHUB_TOKEN }}
         
