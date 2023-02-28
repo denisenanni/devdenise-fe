@@ -1,0 +1,53 @@
+ul.menu {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+  list-style-type: none;
+  margin: 5vh auto;
+  padding: 0;
+  display: block;
+  border-top: 0.5px solid #fff;
+}
+
+ul.menu > li {
+  display: inline-block;
+  margin: 0 1vw;
+  padding: 0;
+  -webkit-transition: padding 0.5s, background-color 0.5s;
+  transition: padding 0.5s, background-color 0.5s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2vw;
+}
+
+ul.menu > li:hover {
+  background-color: rgba(7, 10, 26, 0.6);
+  padding: 1vw;
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  li a {
+    font-size: initial;
+  }
+  ul.menu {
+    border-top: none;
+  }
+  ul.menu > li {
+    display: block;
+    padding: 0.2rem;
+  }
+  li a:active {
+    background-color: rgba(7, 10, 26, 0.6);
+    padding: 1vw;
+  }
+}
+/*# sourceMappingURL=menu.component.css.map */

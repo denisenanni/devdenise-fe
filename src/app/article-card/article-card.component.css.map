@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,GAAG,AAAA,KAAK,AAAA,MAAM,CAAC;EACX,KAAK,EAAE,IAAI;EACX,gBAAgB,EAAE,kBAAkB;CACvC;;AAED,AAAA,CAAC,AAAA,UAAU,CAAC;EACR,MAAM,EAAE,OAAO;CAClB",
+    "sources": [
+        "article-card.component.scss"
+    ],
+    "names": [],
+    "file": "article-card.component.css"
+}

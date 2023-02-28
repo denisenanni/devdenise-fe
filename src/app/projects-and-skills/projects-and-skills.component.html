@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row p-4">
+    <div class="col">
+      <button goback>Back</button>
+    </div>
+  </div>
+  <div class="title row p-4 d-flex  {{this.isMobile && this.showProjects ? 'flex-column': this.isMobile && this.showSkills ? 'flex-column-reverse' : ''}}">
+    <div class="col text-center {{this.isMobile  && !this.showProjects ? 'unselected': ''}}" >
+      <button class="{{this.showProjects ? 'opaque' : !this.showProjects && this.isMobile ? 'unselected' : '' }}"  (click)="toggleProjects()"><h4>Projects</h4></button>
+    </div>
+    <div class="col text-center {{this.isMobile  && !this.showSkills ? 'unselected' : ''}}" >
+      <button class="{{this.showSkills ? 'opaque' : !this.showSkills && this.isMobile ? 'unselected' : '' }}" (click)="toggleSkills()"><h4>Skills</h4></button>
+    </div>
+  </div>
+  <div class="row p-4 d-flex justify-content-center" *ngIf="!showSkills">
+    <div class="col col-lg-6 col-md-10 col-12 mb-4" *ngFor="let p of projects">
+      <ProjectCardComponent [project]="p"></ProjectCardComponent>
+    </div>
+  </div>
+  <div class="container mt-4" *ngIf="showSkills">
+    <div *ngFor="let skill of skills">
+      <div class="skills">
+        <div>{{ skill }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="row back p-4 text-center">
+    <div class="col">
+      <button goback>Back</button>
+    </div>
+  </div>
+</div>

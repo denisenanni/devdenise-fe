@@ -1,0 +1,41 @@
+div.img-container {
+  text-align: center;
+  img {
+      &.img-fluid {
+      margin-left: 1.5rem;
+      max-width: 60%;
+      margin: 0 auto;  
+    }
+  }
+}
+div.home-heading {
+  .home-heading {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+      0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    max-width: 80vh;
+    line-height: 3rem;
+  }
+}
+
+div.social-links {
+  text-align: right;
+  display: block;
+  img {
+    opacity: .7;
+    transition: 0.3s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  h1.home-heading {
+    font-size: 10vw;
+  }
+
+  img.img-fluid {
+    max-width: 38vw;
+  }
+}

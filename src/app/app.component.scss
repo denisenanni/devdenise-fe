@@ -1,0 +1,17 @@
+.background {
+  background: hsla(0, 0%, 7%, 1);
+  background: linear-gradient(45deg, hsla(0, 0%, 7%, 1) 0%, hsla(226, 88%, 16%, 1) 100%);
+  background: -moz-linear-gradient(45deg, hsla(0, 0%, 7%, 1) 0%, hsla(226, 88%, 16%, 1) 100%);
+  background: -webkit-linear-gradient(45deg, hsla(0, 0%, 7%, 1) 0%, hsla(226, 88%, 16%, 1) 100%);
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 1.5rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+

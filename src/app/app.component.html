@@ -1,0 +1,11 @@
+<div
+
+  [@routeAnimations]="
+    o && o.activatedRouteData && o.activatedRouteData['animation']
+  "
+  class="background"
+>
+  <router-outlet #o="outlet"></router-outlet>
+</div>
+
+<footer></footer>

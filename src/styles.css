@@ -1,0 +1,97 @@
+@import url(/home/denise/Apps/devdenise-fe/node_modules/bootstrap/dist/css/bootstrap.css);
+@font-face {
+  font-family: Halva;
+  src: url(assets/fonts/halva-font/Halva-qZY3r.otf) format("opentype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+* body {
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* body div.background {
+  width: 100vw;
+  min-height: 110vh;
+  background-size: 100% 100%;
+  background-position: top center;
+}
+
+* body div.background h1,
+* body div.background h2,
+* body div.background h3,
+* body div.background h4,
+* body div.background h5,
+* body div.background h6,
+* body div.background button,
+* body div.background a,
+* body div.background p,
+* body div.background div {
+  font-family: Halva;
+}
+
+* body div.background h3 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+* body div.background p {
+  font-size: 1.5rem;
+}
+
+* body div.background p.card-text {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+* body div.background button {
+  padding: 0.5vh;
+  margin: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+* body div.background code,
+* body div.background a {
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+* body div.background h1 {
+  font-size: 3rem;
+}
+
+img.article-img {
+  max-width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  p.card-text {
+    font-size: 1rem !important;
+  }
+  h5.card-title {
+    margin: 0;
+  }
+  div.card-body {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

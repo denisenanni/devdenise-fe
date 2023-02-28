@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <div class="row text-left">
+    <div class="home-heading mt-4 row">
+      <div class="img-container col col-2 col-md-1 col-lg-1">
+        <img
+          src="../../assets/pic-site.png"
+          class="img-fluid rounded-circle"
+          alt="devdenise"
+        />
+      </div>
+
+      <div  class="home-heading col col-10 col-md-11 col-lg-11">
+        <teximate #teximate [text]="animatedText" [enter]="initAnimation"></teximate>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    
+  </div>
+
+  <div class="container-fluid mt-4">
+    <div class="social-links m-3 row">
+      <a target="_blank" href="{{ gitHubProfile }}"
+        ><img
+          class="icons animate__animated animate__bounceInRight"
+          src="./../../assets/github-icon.png"
+          alt="github"
+          width="30"
+          height="30"
+      /></a>
+    </div>
+    <div class="social-links m-3 row" [class.animate__bounce]="shouldBounce">
+      <a target="_blank" href="{{ linkedinProfile }}"
+        ><img
+          class="icons animate__animated animate__bounceInRight"
+          src="./../../assets/linkedin-icon.png"
+          alt="linkedin"
+          width="30"
+          height="30"
+      /></a>
+    </div>
+    <div class="social-links m-3 row" >
+      <a target="_blank" href="{{ soundCloudProfile }}"
+        ><img
+          class="icons animate__animated animate__bounceInRight"
+          src="./../../assets/soundcloud-icon.png"
+          alt="soundcloud"
+          width="30"
+          height="30"
+      /></a>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <menu></menu>
+  </div>
+</div>

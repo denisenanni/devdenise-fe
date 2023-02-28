@@ -1,0 +1,39 @@
+button {
+  padding: 0.5vh;
+  margin: 0.5vh;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.project {
+  width: 30vw;
+}
+
+div.title {
+  border-bottom: 1px solid #fff;
+  margin: 0 auto;
+}
+
+div.skills {
+  font-size: 1.2rem;
+}
+
+@media only screen and (hover: none) and (pointer: coarse) {
+  div.project {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+
+.opaque {
+  opacity: 0.5;
+}
+
+.unselected {
+  width: 52%;
+  margin: 0 auto;
+  h4 {
+    font-size: .7rem !important;
+    
+
+  }
+}

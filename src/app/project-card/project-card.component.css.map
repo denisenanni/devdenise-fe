@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,GAAG,AAAA,KAAK,CAAC;EACP,UAAU,EAAE,WAAW;EACvB,MAAM,EAAE,IAAI;EACZ,eAAe,EAAE,KAAK;EACtB,MAAM,EAAE,WAAW;CACpB;;AAED,AAAA,CAAC,AAAA,UAAU,CAAC;EACV,MAAM,EAAE,OAAO;CAChB;;AAED,AAAA,GAAG,AAAA,MAAM,CAAC;EACR,gBAAgB,EAAE,kBAAkB;EACpC,MAAM,EAAE,OAAO;EACf,OAAO,EAAE,IAAI;CAEd;;AAOD,AAAA,CAAC,AAAA,UAAU,CAAC;EACR,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "project-card.component.scss"
+    ],
+    "names": [],
+    "file": "project-card.component.css"
+}
