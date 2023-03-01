@@ -11,7 +11,7 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         BrowserAnimationsModule,
-        AppRoutingModule,
+        AppRoutingModule
       ],
       declarations: [
         AppComponent
