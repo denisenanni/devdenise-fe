@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { Project } from '../model/project';
+import { ProjectCardComponent } from '../project-card/project-card.component';
 
 import { ProjectsAndSkillsComponent } from './projects-and-skills.component';
 
@@ -13,7 +14,7 @@ describe('ProjectsAndSkillsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProjectsAndSkillsComponent ]
+      declarations: [ ProjectsAndSkillsComponent, ProjectCardComponent ]
     })
     .compileComponents();
   }));
