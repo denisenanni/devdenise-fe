@@ -1,7 +1,7 @@
 <div class="container mt-5">
   <div class="row justify-content-center">
     <div class="column" *ngIf="!isFormSubmitted; else thankyou">
-      <div class="d-flex w-50 m-auto">
+      <div class="d-flex w-50 m-auto justify-content-center">
         <Header headerType="h3" text="Drop a message"></Header>
       </div>
       <form (ngSubmit)="onSubmitContactForm()" [formGroup]="contactForm" name="devdenise-form">
@@ -32,9 +32,13 @@
         </div>
         <div class="row mt-5">
           <div class="column d-flex justify-content-center">
-            <button type="submit" class="btn btn-outline-light w-25" [disabled]="!contactForm.valid">SEND
-              <!-- <ngx-spinner
-                type="ball-scale-multiple"></ngx-spinner> -->
+            <div class="spinner-container">
+              <ngx-spinner type="ball-elastic-dots" [fullScreen]="false" size="small"
+                [showSpinner]="showSpinner"></ngx-spinner>
+            </div>
+            <button *ngIf="!showSpinner" type="submit" class="btn btn-outline-light w-25"
+              [disabled]="!contactForm.valid">
+              SEND
             </button>
           </div>
         </div>
