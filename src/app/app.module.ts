@@ -19,7 +19,7 @@ import { TeximateModule } from 'ngx-teximate';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './commons/header/header.component';
-import { NgxSpinnerModule } from "ngx-spinner";
+//import { NgxSpinnerModule } from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -44,7 +44,7 @@ import { NgxSpinnerModule } from "ngx-spinner";
     CommonModule,
     TeximateModule,
     ReactiveFormsModule,
-    NgxSpinnerModule,
+    //NgxSpinnerModule,
   ],
   providers: [AppService],
   bootstrap: [AppComponent],
