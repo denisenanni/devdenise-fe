@@ -1,0 +1,46 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="column" *ngIf="!isFormSubmitted; else thankyou">
+      <div class="d-flex w-50 m-auto">
+        <Header headerType="h3" text="Drop a message"></Header>
+      </div>
+      <form (ngSubmit)="onSubmitContactForm()" [formGroup]="contactForm" name="devdenise-form">
+        <div class="row">
+          <div class="column d-flex flex-column">
+            <label for="contact-info" class="text-left mb-3 w-50 m-auto">Contacts </label>
+            <input class="w-50 m-auto" id="contact-info" type="text" formControlName="contactInfo" required
+              name="contact" />
+            <div *ngIf="contactForm.controls.contactInfo.errors?.['required'] && 
+                (contactForm.controls.contactInfo.dirty || contactForm.controls.contactInfo.touched)"
+              class="text-left mt-2 fs-6 w-50 m-auto bg-danger">
+              Contact info is required.
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="column d-flex flex-column">
+            <label for="message" class="text-left mb-3 w-50 m-auto">Message </label>
+            <textarea class="w-50 m-auto" id="message" type="text" formControlName="message" required
+              name="message"></textarea>
+            <div *ngIf="contactForm.controls.message.errors?.['required'] && 
+                (contactForm.controls.message.dirty || contactForm.controls.message.touched)"
+              class="text-left mt-2 fs-6 w-50 m-auto bg-danger">
+              Message is required.
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="column d-flex justify-content-center">
+            <button type="submit" class="btn btn-outline-light w-25" [disabled]="!contactForm.valid">SEND <ngx-spinner
+                type="ball-scale-multiple"></ngx-spinner></button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <ng-template #thankyou>
+      <Header headerType="h2" text="Thank you for submitting your form"></Header>
+      <button class="btn btn-outline-light w-25" (click)="isFormSubmitted = false">Go back to form</button>
+    </ng-template>
+  </div>
+</div>

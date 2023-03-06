@@ -29,7 +29,8 @@
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/ngx-spinner/animations/ball-scale-multiple.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",
@@ -47,7 +48,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -129,6 +129,5 @@
           "builder": "angular-cli-ghpages:deploy"
         }
       }
-    }},
-  "defaultProject": "portfolio"
+    }}
 }
