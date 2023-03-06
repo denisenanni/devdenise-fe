@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,7 +19,7 @@ import { TeximateModule } from 'ngx-teximate';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './commons/header/header.component';
-//import { NgxSpinnerModule } from "ngx-spinner";
+import { NgxSpinnerModule } from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -44,8 +44,9 @@ import { HeaderComponent } from './commons/header/header.component';
     CommonModule,
     TeximateModule,
     ReactiveFormsModule,
-    //NgxSpinnerModule,
+    NgxSpinnerModule,
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [AppService],
   bootstrap: [AppComponent],
 })
