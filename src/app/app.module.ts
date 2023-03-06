@@ -16,6 +16,10 @@ import { AppService } from './app.service';
 import { FooterComponent } from './footer/footer.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { TeximateModule } from 'ngx-teximate';
+import { ContactsComponent } from './contacts/contacts.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './commons/header/header.component';
+//import { NgxSpinnerModule } from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -30,13 +34,17 @@ import { TeximateModule } from 'ngx-teximate';
     ProjectsAndSkillsComponent,
     FooterComponent,
     ProjectCardComponent,
+    ContactsComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CommonModule,
-    TeximateModule
+    TeximateModule,
+    ReactiveFormsModule,
+    //NgxSpinnerModule,
   ],
   providers: [AppService],
   bootstrap: [AppComponent],

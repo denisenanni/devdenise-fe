@@ -8,8 +8,9 @@
 </button>  
 
 <ul 
-    class="menu icons animate__animated animate__bounceInLeft"
-    [ngClass]="{'d-none': !this.isToggled}">
-    <li><a routerLink="/projects">PROJECTS AND SKILLS</a></li>
+    class="menu icons animate__animated animate__bounceInLeft {{this.isToggled ? '' : 'd-none'}}"
+    >
+    <li class=""><a routerLink="/projects">PROJECTS AND SKILLS</a></li>
+    <li class=""><a routerLink="/contacts">CONTACTS</a></li>
     <!--<li><a routerLink="/blog">BLOG</a></li>-->
 </ul>
