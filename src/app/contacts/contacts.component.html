@@ -36,7 +36,7 @@
               <ngx-spinner type="ball-elastic-dots" [fullScreen]="false" size="small"
                 [showSpinner]="showSpinner"></ngx-spinner>
             </div>
-            <button *ngIf="!showSpinner" type="submit" class="btn btn-outline-light w-25"
+            <button *ngIf="!showSpinner" type="submit" class="btn btn-outline-light w-25 submit-button"
               [disabled]="!contactForm.valid">
               SEND
             </button>
@@ -46,7 +46,8 @@
     </div>
     <ng-template #thankyou>
       <Header headerType="h2" text="Thank you for submitting your form"></Header>
-      <button class="btn btn-outline-light w-25" (click)="isFormSubmitted = false">Go back to form</button>
+      <button class="btn btn-outline-light w-25" (click)="isFormSubmitted = false">Go back to
+        form</button>
     </ng-template>
   </div>
 </div>

@@ -34,12 +34,11 @@ li a {
   color: white;
   text-align: center;
   text-decoration: none;
-  font-size: 2vw;
 }
 
 ul.menu > li:hover {
   background-color: rgba(7, 10, 26, 0.6);
-  padding: 1vw;
+  padding: 0.3rem;
 }
 
 @media only screen and (hover: none) and (pointer: coarse) {
