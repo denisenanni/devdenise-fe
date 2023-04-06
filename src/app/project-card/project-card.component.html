@@ -1,7 +1,4 @@
-<div
-  class="card m-4"
-  [ngStyle]="{ 'background-image': 'url(' + project.imageLink + ')' }"
->
+<div class="card m-4" [ngStyle]="{ 'background-image': 'url(' + project.imageLink + ')' }">
   <div class="layer text-center">
     <div class="card-header">
       <h5 class="card-title font-weight-bold">
@@ -12,11 +9,11 @@
       <p class="card-text">{{ project.description }}</p>
     </div>
     <div *ngIf="mobile; else desktop">
-      <a (click)="goToProject()">Go to project</a>
+      <a (click)="goToProject()" i18n>Go to project</a>
     </div>
     <ng-template #desktop>
       <div class="footer w-100">
-        <button class="btn btn-outline-light btn-lg" (click)="goToProject()">
+        <button class="btn btn-outline-light btn-lg" (click)="goToProject()" i18n>
           Go to project
         </button>
       </div>

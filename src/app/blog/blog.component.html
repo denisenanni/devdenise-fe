@@ -4,15 +4,8 @@
       <button goback>Back</button>
     </div>
   </div>
-  <div
-    class="row p-4 d-flex justify-content-center"
-    *ngIf="articlesCards; else notFound"
-  >
-    <div
-      class="col col-lg-10 col-md-10 col-sm-12 mb-4"
-      *ngFor="let articleCard of articlesCards"
-     
-    >
+  <div class="row p-4 d-flex justify-content-center" *ngIf="articlesCards; else notFound">
+    <div class="col col-lg-10 col-md-10 col-sm-12 mb-4" *ngFor="let articleCard of articlesCards">
       <ArticleCardComponent [articleCard]="articleCard"></ArticleCardComponent>
     </div>
   </div>
@@ -25,7 +18,7 @@
   </ng-template>
   <div class="row p-4 text-center">
     <div class="col">
-      <button goback>Back</button>
+      <button goback i18n>Back</button>
     </div>
   </div>
 </div>

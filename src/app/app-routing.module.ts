@@ -4,7 +4,6 @@ import { HomeComponent } from './home/home.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
 import { BlogComponent } from './blog/blog.component';
 import { ProjectsAndSkillsComponent } from './projects-and-skills/projects-and-skills.component';
-import { ArticleComponent } from './article/article.component';
 import { ContactsComponent } from './contacts/contacts.component';
 
 const routes: Routes = [
