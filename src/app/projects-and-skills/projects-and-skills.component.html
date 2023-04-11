@@ -5,14 +5,14 @@
       <button
         class="{{this.showSkills ? 'opaque hover-item' : !this.showProjects && this.isMobile ? 'unselected' : '' }}"
         (click)="toggleProjects()">
-        <h4 i18n>Projects</h4>
+        <h4>{{ 'menu.projects' | i18next }}</h4>
       </button>
     </div>
     <div class="col text-center {{this.isMobile  && !this.showSkills ? 'unselected' : ''}}">
       <button
         class="{{this.showProjects ? 'opaque hover-item' : !this.showSkills && this.isMobile ? 'unselected' : '' }}"
         (click)="toggleSkills()">
-        <h4 i18n>Skills</h4>
+        <h4>{{ 'menu.skills' | i18next }}</h4>
       </button>
     </div>
   </div>

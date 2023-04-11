@@ -1,0 +1,26 @@
+{
+    "menu": {
+        "projectsSkills": "projects and skills",
+        "contacts": "contacts",
+        "projects": "projects",
+        "skills": "skills"
+    },
+    "back": "back",
+    "form": {
+        "fields": {
+            "message": "message",
+            "contact": "phone number/email"
+        },
+        "errors": {
+            "message": "The message is required",
+            "contact": "The contact info is required"
+        },
+        "send": "send",
+        "thankYouMsg": "Thank you for submitting your form",
+        "backToForm": "Go back to form"
+    },
+    "projects": {
+        "goToProjetct": "Go to project"
+    },
+    "underConstruction": "Under construction"  
+}

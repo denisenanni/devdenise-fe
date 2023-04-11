@@ -20,7 +20,8 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './commons/header/header.component';
 import { NgxSpinnerModule } from "ngx-spinner";
-
+import { I18NextModule, StrictErrorHandlingStrategy } from 'angular-i18next';
+import { I18N_PROVIDERS } from './app.i18backend';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,9 +46,10 @@ import { NgxSpinnerModule } from "ngx-spinner";
     TeximateModule,
     ReactiveFormsModule,
     NgxSpinnerModule,
+    I18NextModule.forRoot({ errorHandlingStrategy: StrictErrorHandlingStrategy })
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  providers: [AppService],
+  providers: [AppService, I18N_PROVIDERS],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

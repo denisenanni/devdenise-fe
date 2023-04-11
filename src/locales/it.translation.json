@@ -1,0 +1,26 @@
+{
+    "menu": {
+        "projectsSkills": "progetti e competenze",
+        "contacts": "contatti",
+        "projects": "projects",
+        "skills": "skills"
+    },
+    "back": "indietro",
+    "form": {
+        "fields": {
+            "message": "messaggio",
+            "contact": "numero/email"
+        },
+        "errors": {
+            "message": "Il messaggio è richiesto",
+            "contact": "Le info di contatto sono richieste"
+        },
+        "send": "invia",
+        "thankYouMsg": "Grazie!",
+        "backToForm": "Torna al form"
+    },
+    "projects": {
+        "goToProjetct": "Vai al progetto"
+    },
+    "underConstruction": "Under construction"  
+}
