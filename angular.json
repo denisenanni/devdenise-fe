@@ -4,14 +4,6 @@
   "newProjectRoot": "projects",
   "projects": {
     "portfolio": {
-      "i18n": {
-        "sourceLocale": "en-US",
-        "locales": {
-          "it": {
-            "translation": "src/locale/messages.it-IT.xlf"
-          }
-        }
-      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -25,7 +17,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "localize" : ["en-US"],
             "outputPath": "docs/",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -34,7 +25,8 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/locales"
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",

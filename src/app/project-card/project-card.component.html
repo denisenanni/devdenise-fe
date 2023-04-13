@@ -9,12 +9,12 @@
       <p class="card-text">{{ project.description }}</p>
     </div>
     <div *ngIf="mobile; else desktop">
-      <a (click)="goToProject()" i18n>Go to project</a>
+      <a (click)="goToProject()">{{ 'projects.goToProject' | i18next }} </a>
     </div>
     <ng-template #desktop>
       <div class="footer w-100">
-        <button class="btn btn-outline-light btn-lg" (click)="goToProject()" i18n>
-          Go to project
+        <button class="btn btn-outline-light btn-lg" (click)="goToProject()">
+          {{ 'projects.goToProject' | i18next }}
         </button>
       </div>
     </ng-template>
