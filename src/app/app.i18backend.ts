@@ -45,7 +45,7 @@ const i18nextOptions = {
     };
   }
 
-export function localeIdFactory(i18next: ITranslationService)  {
+function localeIdFactory(i18next: ITranslationService)  {
     return i18next.language;
 }
 

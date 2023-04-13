@@ -13,7 +13,8 @@
         },
         "errors": {
             "message": "The message is required",
-            "contact": "The contact info is required"
+            "contact": "The contact info is required",
+            "invalidValues": "Please insert valid values"
         },
         "send": "send",
         "thankYouMsg": "Thank you for submitting your form",

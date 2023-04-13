@@ -13,7 +13,9 @@
         },
         "errors": {
             "message": "Il messaggio è richiesto",
-            "contact": "Le info di contatto sono richieste"
+            "contact": "Le info di contatto sono richieste",
+            "invalidValues": "Inserire valori validi"
+
         },
         "send": "invia",
         "thankYouMsg": "Grazie!",
