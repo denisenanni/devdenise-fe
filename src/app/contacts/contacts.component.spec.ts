@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { I18NextModule, StrictErrorHandlingStrategy } from 'angular-i18next';
 import i18next from 'i18next';
 import { I18N_PROVIDERS } from '../app.i18backend';
 import { AppModule } from '../app.module';
-import HttpApi from 'i18next-http-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
-
 import { ContactsComponent } from './contacts.component';
-import { i18nextOptions } from '../utils/test-utils';
+import  ita  from 'src/locales/it.translation.json'
+import  en  from 'src/locales/it.translation.json';
 
-xdescribe('ContactsComponent', () => {
+describe('ContactsComponent', () => {
   let component: ContactsComponent;
   let fixture: ComponentFixture<ContactsComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(() => {
+    i18next.init({ resources: {} });
+    i18next.addResourceBundle('en', 'translation', en);
+    i18next.addResourceBundle('it', 'translation', ita);
+    TestBed.configureTestingModule({
       declarations: [ ContactsComponent ],
       imports: [
         AppModule
@@ -25,11 +25,6 @@ xdescribe('ContactsComponent', () => {
 
     fixture = TestBed.createComponent(ContactsComponent);
     component = fixture.componentInstance;
-    i18next
-        .use(HttpApi)
-        .use<any>(LanguageDetector)
-        .init(i18nextOptions);
-    i18next.changeLanguage('it');
     fixture.detectChanges();
   });
 

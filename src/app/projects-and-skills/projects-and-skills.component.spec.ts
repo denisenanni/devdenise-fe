@@ -1,17 +1,15 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { I18NextModule, StrictErrorHandlingStrategy } from 'angular-i18next';
 import i18next from 'i18next';
 import { I18N_PROVIDERS } from '../app.i18backend';
 import { AppModule } from '../app.module';
 import { AppService } from '../app.service';
 import { Project } from '../model/project';
 import { ProjectCardComponent } from '../project-card/project-card.component';
-import HttpApi from 'i18next-http-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
 import { ProjectsAndSkillsComponent } from './projects-and-skills.component';
-import { i18nextOptions } from '../utils/test-utils';
+import  ita  from 'src/locales/it.translation.json'
+import  en  from 'src/locales/it.translation.json';
 
-xdescribe('ProjectsAndSkillsComponent', () => {
+describe('ProjectsAndSkillsComponent', () => {
   let component: ProjectsAndSkillsComponent;
   let fixture: ComponentFixture<ProjectsAndSkillsComponent>;
   let projects: Project[] =[
@@ -20,6 +18,9 @@ xdescribe('ProjectsAndSkillsComponent', () => {
 
 
   beforeEach((() => {
+    i18next.init({ resources: {} });
+    i18next.addResourceBundle('en', 'translation', en);
+    i18next.addResourceBundle('it', 'translation', ita);
     TestBed.configureTestingModule({
       declarations: [ ProjectsAndSkillsComponent, ProjectCardComponent ],
       imports: [
@@ -29,19 +30,11 @@ xdescribe('ProjectsAndSkillsComponent', () => {
 
     })
     .compileComponents();
-  }));
-
-  beforeEach(() => {
     fixture = TestBed.createComponent(ProjectsAndSkillsComponent);
     component = fixture.componentInstance;
     component.projects = projects;
-    i18next
-        .use(HttpApi)
-        .use<any>(LanguageDetector)
-        .init(i18nextOptions);
-    i18next.changeLanguage('it');
     fixture.detectChanges();
-  });
+  }));
 
   it('should create', () => {
     expect(component).toBeDefined();
