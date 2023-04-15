@@ -4,19 +4,21 @@ import {
   BrowserAnimationsModule,
 } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-import { I18NextModule, StrictErrorHandlingStrategy } from 'angular-i18next';
 import { I18N_PROVIDERS } from './app.i18backend';
 import { AppService } from './app.service';
 import i18next from 'i18next';
-import HttpApi from 'i18next-http-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
-import { i18nextOptions } from './utils/test-utils';
 import { AppModule } from './app.module';
+import  ita  from "../locales/it.translation.json";
+import  en  from "../locales/en.translation.json";
 
 
-xdescribe('AppComponent', () => {
+
+describe('AppComponent', () => {
   let app: AppComponent;
   beforeEach((() => {
+    i18next.init({ resources: {} });
+    i18next.addResourceBundle('en', 'translation', en);
+    i18next.addResourceBundle('it', 'translation', ita);
     TestBed.configureTestingModule({
       imports: [
         BrowserAnimationsModule,
@@ -31,14 +33,12 @@ xdescribe('AppComponent', () => {
   }));
 
   it('should create the app', () => {
+   
     const fixture = TestBed.createComponent(AppComponent);
     app = fixture.componentInstance;
     // let debug = fixture.debugElement;
-    i18next
-        .use(HttpApi)
-        .use<any>(LanguageDetector)
-        .init(i18nextOptions);
-    i18next.changeLanguage('it');
+    
+
     fixture.detectChanges();
     expect(app).toBeTruthy();
   });
